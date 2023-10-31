@@ -1,0 +1,334 @@
+main {
+    border-radius: 24px;
+    background-color: rgba(246, 246, 250, 1);
+    display: flex;
+}
+
+.main-container {
+    margin-top: 20px;
+    margin-bottom: 34px;
+    display: flex;
+    padding: 0px 24px 16px 24px;
+    gap: 32px;
+}
+
+.main-info-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-information {
+    gap: 13px;
+    /* flex-grow: 1; */
+    width: 891px;
+}
+
+.cart-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cart-components {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.select-all-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-all {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox+label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox+label:hover {
+    cursor: pointer;
+}
+
+.checkbox+label::before {
+    box-sizing: border-box;
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 6px;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.checkbox:checked+label::before {
+    border-color: rgba(203, 17, 171, 1);
+    background-color: rgba(203, 17, 171, 1);
+    background-image: url('../img/check_mark.svg');
+}
+
+.up-arrow {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.line-division {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: -16px;
+}
+
+
+/* Goods IN stock */
+
+.goods-in-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-information {
+    display: flex;
+    padding-top: 12px;
+    gap: 16px;
+    width: 397px;
+}
+
+.product-img-container {
+    display: flex;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-img {
+    border-radius: 8px;
+    height: 96px;
+    width: 72px;
+}
+
+/* .size_product {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.desktop-none {
+    display: none !important;
+} */
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-options {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.product-stock-options {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(151, 151, 175, 1);
+}
+
+.popup-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.popup-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-info {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.actions-price-of-goods {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+    width: 226px;
+    gap: 16px;
+}
+
+.actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 3px;
+}
+
+.counter-wrapper {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    width: 100px;
+    height: 44px;
+    position: relative;
+}
+
+.counter-btn {
+    position: absolute;
+    background-color: white;
+    border: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.counter-btn:hover {
+    cursor: pointer;
+}
+
+.counter-btn:disabled {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.minus {
+    top: 10px;
+    left: 4px;
+    padding: 2px 7px 6px 15px;
+}
+
+.counter-item {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+.counter-value-container {
+    position: absolute;
+    top: 8px;
+    left: 28px;
+    line-height: 0px;
+}
+
+.value {
+    border: 0;
+    background-color: white;
+    width: 44px;
+    height: 23px;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.plus {
+    top: 10px;
+    right: 4px;
+    padding: 2px 7px 6px 8px;
+}
+
+.remainder {
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 59, 48, 1);
+}
+
+.actions-icons {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+.action-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+    align-items: end;
+}
+
+.current-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.current-price-unit {
+    font-size: 16px;
+}
+
+.old-price {
+    color: rgba(151, 151, 175, 1);
+    gap: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}

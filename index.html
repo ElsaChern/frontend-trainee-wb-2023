@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preload" href="fonts/SegoeUI-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SegoeUI-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SegoeUI-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>Товары и точка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="menu-container">
+            <div class="header-menu">
+                <img src="img/cataloge.svg" alt="Каталог" width="48" height="48">
+            </div>
+            <img src="img/logo_WB.svg" alt="Логотип" width="106" height="56">
+        </div>
+        <div class="search-container">
+            <form>
+                <input class="search-input" type="text" placeholder="Я ищу...">
+                <button class="search-btn" type="submit"></button>
+            </form>
+        </div>
+        <div class="icons-menu-group">
+            <div class="icon-menu">
+                <div class="icon-menu-img">
+                    <img src="./img/profile.svg">
+                </div>
+                <span>Профиль</span>
+            </div>
+            <div class="icon-menu">
+                <div class="icon-menu-img">
+                    <img src="./img/cart.svg">
+                    <div class="quantity quantity-basket">3</div>
+                </div>
+                <span>Корзина</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-info-part cart-information">
+                <h1 class="cart-title">Корзина</h1>
+                <div class="cart">
+                    <div class="cart-components">
+                        <div class="select-all-wrapper">
+                            <div class="select-all">
+                                <input class="checkbox" checked id="check_all" type="checkbox">
+                                <label for="check_all">Выбрать все</label>
+                            </div>
+                            <div class="up-arrow"><img src="./img/up_mark.svg"></div>
+                        </div>
+                        <div class="line-division"></div>
+                        <!------ Goods IN stock. Product № 1 ------>
+                        <div class="goods-in-stock">
+                            <div class="product">
+                                <div class="product-information">
+                                    <div>
+                                        <div class="product-img-container">
+                                            <div class="checkbox-container">
+                                                <input class="checkbox" checked id="prod_1" type="checkbox">
+                                                <label for="prod_1"></label>
+                                            </div>
+                                            <div class="product-img">
+                                                <img src="./img/prod_1.png" alt="Фото товара">
+                                            </div>
+                                            <!-- <span class="size_product desktop-none">56<span> -->
+                                        </div>
+                                    </div>
+                                    <div class="product-description">
+                                        <span> Футболка UZcotton мужская </span>
+                                        <div class="product-options">
+                                            <span>Цвет: белый</span>
+                                            <span>Размер: 56</span>
+                                        </div>
+                                        <div class="product-stock-options">
+                                            <span>Коледино WB</span>
+                                            <div class="popup-wrapper">
+                                                <span>OOO Вайлдберриз</span>
+                                                <div class="popup-container">
+                                                    <span id="popup-button-market-1" class="btn-info">&#9432;</span>
+                                                    <!-- <div class="popup-info popup-info-market" id="popup-info-market-1">
+                                                        <h5>OOO «Вайлдберриз»</h5>
+                                                        <span>ОГРН: 5167746237148</span>
+                                                        <span>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1,
+                                                            помещение 2, офис 34</span>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="actions-price-of-goods">
+                                    <div class="actions-container">
+                                        <div class="counter-wrapper">
+                                            <button class="counter-btn minus" id="minus-1" disabled>
+                                                <div class="counter-item">−</div>
+                                            </button>
+                                            <div class="counter-value-container">
+                                                <input class="value" id="counter-value-1" type="text" name="counter"
+                                                    value="1" disabled>
+                                            </div>
+                                            <button class="counter-btn plus" id="plus-1">
+                                                <div class="counter-item">+</div>
+                                            </button>
+                                        </div>
+                                        <span class="remainder" id="remainder">Осталось 2 шт.</span>
+                                        <div class="actions-icons">
+                                            <div class="action-icon">
+                                                <img src="./img/like.svg" alt="Добавить в избранное">
+                                            </div>
+                                            <div class="action-icon">
+                                                <img src="./img/delete.svg" alt="Удалить товар">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price-container">
+                                        <span class="current-price">522 <span
+                                                class="current-price-unit">сом</span></span>
+                                        <span class="old-price"><del>1051 сом</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
