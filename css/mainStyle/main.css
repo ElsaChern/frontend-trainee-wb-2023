@@ -21,6 +21,7 @@ main {
 .cart-information {
     gap: 13px;
     flex-grow: 1;
+    /* width: 891px; */
 }
 
 .cart-title {
