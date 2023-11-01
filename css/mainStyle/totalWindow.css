@@ -1,0 +1,158 @@
+.delivery-and-payment-wrapper {
+    width: 381px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 24px 24px 24px;
+    justify-content: center;
+
+    height: fit-content;
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+}
+
+
+.total_amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.total {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.total-sum {
+    font-size: 23px;
+    line-height: 33px;
+    margin: 0;
+}
+
+.total-amount-unit {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.extra-payment-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-point {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.d-and-p-title {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+
+.marker {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+}
+
+.delivery-adress {
+    margin-top: 5px;
+}
+
+.date-pink {
+    margin-top: -8px;
+    color: rgba(203, 17, 171, 1);
+    width: max-content;
+    border-bottom: 1px dashed rgba(203, 17, 171, 0.2);
+}
+
+.delivery-info {
+    margin-top: 13px;
+    padding: 8px 8px 12px 8px;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    background-color: rgba(246, 246, 250, 1);
+    align-items: center;
+}
+
+.text-green {
+    color: rgba(12, 180, 119, 1);
+    border-bottom: 1px dashed rgba(12, 180, 119, 0.2);
+}
+
+.payment-card {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.payment-card-img {
+    margin-right: 8px;
+    width: 32px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(246, 246, 250, 1);
+}
+
+.payment-info-wrapper {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    padding: 8px 8px 12px 8px;
+    border-radius: 8px;
+    background-color: rgba(246, 246, 250, 1);
+}
+
+.payment-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.payment-comment {
+    margin-left: -3px;
+}
+
+.to-order {
+    display: flex;
+    flex-direction: column;
+}
+
+.to-order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(203, 17, 171, 1);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 44px;
+    margin-bottom: 12px;
+}
+
+.to-order-comment {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.gray-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

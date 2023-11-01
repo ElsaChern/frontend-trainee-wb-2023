@@ -10,7 +10,10 @@
     <title>Товары и точка</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mainStyle/main.css">
+    <link rel="stylesheet" href="./css/mainStyle/totalWindow.css">
+    <link rel="stylesheet" href="./css/mainStyle/goodsInStock.css">
+    <link rel="stylesheet" href="./css/mainStyle/goodsOutStock.css">
 </head>
 
 <body>
@@ -57,7 +60,7 @@
                             <div class="up-arrow"><img src="./img/up_mark.svg"></div>
                         </div>
                         <div class="line-division"></div>
-                        <!------ Goods IN stock. Product № 1 ------>
+                        <!---------------- Goods IN stock. Product № 1 ------------->
                         <div class="goods-in-stock">
                             <div class="product">
                                 <div class="product-information">
@@ -84,7 +87,8 @@
                                             <div class="popup-wrapper">
                                                 <span>OOO Вайлдберриз</span>
                                                 <div class="popup-container">
-                                                    <span id="popup-button-market-1" class="btn-info">&#9432;</span>
+                                                    <span id="popup-button-market-1" class="btn-info"><img
+                                                            src="./img/info_btn.svg"></span>
                                                     <!-- <div class="popup-info popup-info-market" id="popup-info-market-1">
                                                         <h5>OOO «Вайлдберриз»</h5>
                                                         <span>ОГРН: 5167746237148</span>
@@ -96,10 +100,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                                 <div class="actions-price-of-goods">
                                     <div class="actions-container">
                                         <div class="counter-wrapper">
@@ -116,12 +116,8 @@
                                         </div>
                                         <span class="remainder" id="remainder">Осталось 2 шт.</span>
                                         <div class="actions-icons">
-                                            <div class="action-icon">
-                                                <img src="./img/like.svg" alt="Добавить в избранное">
-                                            </div>
-                                            <div class="action-icon">
-                                                <img src="./img/delete.svg" alt="Удалить товар">
-                                            </div>
+                                            <img src="./img/like.svg" alt="Добавить в избранное">
+                                            <img src="./img/delete.svg" alt="Удалить товар">
                                         </div>
                                     </div>
                                     <div class="price-container">
@@ -130,6 +126,190 @@
                                         <span class="old-price"><del>1051 сом</del></span>
                                     </div>
                                 </div>
+                            </div>
+                            <!---------------- Goods IN stock. Product № 2 ------------->
+                            <div class="product">
+                                <div class="product-information">
+                                    <div>
+                                        <div class="product-img-container">
+                                            <div class="checkbox-container">
+                                                <input class="checkbox" checked id="prod_2" type="checkbox">
+                                                <label for="prod_2"></label>
+                                            </div>
+                                            <div class="product-img">
+                                                <img src="./img/prod_2.png" alt="Фото товара">
+                                            </div>
+                                            <!-- <span class="size_product desktop-none">56<span> -->
+                                        </div>
+                                    </div>
+                                    <div class="product-description">
+                                        <span> Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер
+                                            на Apple iPhone XR, MobiSafe </span>
+                                        <div class="product-options">
+                                            <span>Цвет: прозрачный</span>
+                                        </div>
+                                        <div class="product-stock-options">
+                                            <span>Коледино WB</span>
+                                            <div class="popup-wrapper">
+                                                <span>OOO Мегапрофстиль</span>
+                                                <div class="popup-container">
+                                                    <span id="popup-button-market-2" class="btn-info"><img
+                                                            src="./img/info_btn.svg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions-price-of-goods">
+                                    <div class="actions-container">
+                                        <div class="counter-wrapper">
+                                            <button class="counter-btn minus" id="minus-2" disabled>
+                                                <div class="counter-item">−</div>
+                                            </button>
+                                            <div class="counter-value-container">
+                                                <input class="value" id="counter-value-2" type="text" name="counter"
+                                                    value="200" disabled>
+                                            </div>
+                                            <button class="counter-btn plus" id="plus-2">
+                                                <div class="counter-item">+</div>
+                                            </button>
+                                        </div>
+                                        <div class="actions-icons">
+                                            <img src="./img/like.svg" alt="Добавить в избранное">
+                                            <img src="./img/delete.svg" alt="Удалить товар">
+                                        </div>
+                                    </div>
+                                    <div class="price-container">
+                                        <span class="current-price-v2">2 100 047 <span
+                                                class="current-price-unit">сом</span></span>
+                                        <span class="old-price"><del>2 300 047 сом</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------- Goods IN stock. Product № 3 ------------->
+                            <div class="product">
+                                <div class="product-information">
+                                    <div>
+                                        <div class="product-img-container">
+                                            <div class="checkbox-container">
+                                                <input class="checkbox" checked id="prod_3" type="checkbox">
+                                                <label for="prod_3"></label>
+                                            </div>
+                                            <div class="product-img">
+                                                <img src="./img/prod_3.png" alt="Фото товара">
+                                            </div>
+                                            <!-- <span class="size_product desktop-none">56<span> -->
+                                        </div>
+                                    </div>
+                                    <div class="product-description">
+                                        <span> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
+                                            шестигранные,<br>Faber-Castell </span>
+                                        <div class="product-stock-options">
+                                            <span>Коледино WB</span>
+                                            <div class="popup-wrapper">
+                                                <span>OOO Вайлдберриз</span>
+                                                <div class="popup-container">
+                                                    <span id="popup-button-market-3" class="btn-info"><img
+                                                            src="./img/info_btn.svg"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions-price-of-goods">
+                                    <div class="actions-container">
+                                        <div class="counter-wrapper">
+                                            <button class="counter-btn minus" id="minus-3" disabled>
+                                                <div class="counter-item">−</div>
+                                            </button>
+                                            <div class="counter-value-container">
+                                                <input class="value" id="counter-value-3" type="text" name="counter"
+                                                    value="2" disabled>
+                                            </div>
+                                            <button class="counter-btn plus" id="plus-3">
+                                                <div class="counter-item">+</div>
+                                            </button>
+                                        </div>
+                                        <span class="remainder" id="remainder">Осталось 2 шт.</span>
+                                        <div class="actions-icons">
+                                            <img src="./img/like.svg" alt="Добавить в избранное">
+                                            <img src="./img/delete.svg" alt="Удалить товар">
+                                        </div>
+                                    </div>
+                                    <div class="price-container">
+                                        <span class="current-price">494 <span
+                                                class="current-price-unit">сом</span></span>
+                                        <span class="old-price"><del>950 сом</del></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------- Total Window (right part of site) ------------->
+            <div class="main-info-part delivery-and-payment-wrapper">
+                <div class="delivery-and-payment">
+                    <div class="total_amount">
+                        <h2 class="total">Итого</h2>
+                        <h3 class="total-sum">2 101 063<span class="total-amount-unit"> сом</span></h3>
+                    </div>
+                    <div class="extra-payment-info">
+                        <span>203 товара</span>
+                        <span>2 302 048 сом</span>
+                    </div>
+                    <div class="extra-payment-info">
+                        <span>Скидка</span>
+                        <span>−200 985 сом</span>
+                    </div>
+                    <div class="extra-payment-info">
+                        <span>Доставка</span>
+                        <span>Бесплатно</span>
+                    </div>
+                    <div class="delivery">
+                        <div class="delivery-point">
+                            <h4 class="d-and-p-title">Доставка в пункт выдачи</h4>
+                            <div class="marker">
+                                <img src="./img/marker.svg" alt="Маркер">
+                            </div>
+                        </div>
+                        <p class="delivery-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                        <span class="date-pink">5–8 фев</span>
+                        <div class="delivery-info">
+                            <div class="green-check-mark">
+                                <img src="./img/green_check_mark.svg">
+                            </div>
+                            <span>Обратная доставка товаров на склад при отказе —
+                                <span class="text-green">бесплатно</span>
+                            </span>
+                        </div>
+                        <div class="delivery-point">
+                            <h4 class="d-and-p-title">Оплата картой</h4>
+                            <div class="marker">
+                                <img src="./img/marker.svg" alt="Маркер">
+                            </div>
+                        </div>
+                        <div class="payment-card">
+                            <div class="payment-card-img">
+                                <img src="./img/mir_card.svg">
+                            </div>
+                            <span>1234 12•• •••• 1234</span>
+                        </div>
+                        <div class="payment-info-wrapper">
+                            <div class="payment-info">
+                                <input type="checkbox" class="checkbox" id="pay_checkbox">
+                                <label for="pay_checkbox"></label>
+                                <span class="payment-comment">Списать оплату сразу</span>
+                            </div>
+                            <span>Спишем оплату с карты при получении</span>
+                        </div>
+                        <div class="to-order">
+                            <button type="button" id="to_order_button" class="to-order-btn">Заказать</button>
+                            <div class="to-order-comment">
+                                <img src="./img/black_tick.svg">
+                                <span>Соглашаюсь <span class="gray-bottom">с правилами пользования торговой
+                                        площадкой</span> и <span class="gray-bottom">возврата</span>
+                                </span>
                             </div>
                         </div>
                     </div>
