@@ -1,0 +1,27 @@
+.no-products-title {
+    font-weight: 600;
+    letter-spacing: -0.25px;
+}
+
+.product-out-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 16px;
+    color: rgba(151, 151, 175, 1);
+}
+
+.actions-icons-out {
+    margin-left: 44px;
+    display: flex;
+    gap: 16px;
+}
+
+.product-description.disabled-text {
+    width: 309px;
+    margin-top: 4px;
+}
+
+.actions-container.disabled-actions {
+    padding-top: 10px;
+}
