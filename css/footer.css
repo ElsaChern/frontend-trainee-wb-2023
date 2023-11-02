@@ -1,0 +1,12 @@
+footer {
+    justify-content: center;
+}
+
+.footer-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    letter-spacing: 0.25px;
+}
