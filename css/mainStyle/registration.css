@@ -1,0 +1,170 @@
+.registration-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.registration {
+    background-color: white;
+    padding: 7px 18px 11px 24px;
+    border-radius: 16px;
+}
+
+.registration-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -19px;
+    align-items: baseline;
+}
+
+.registration-title {
+    font-size: 24px;
+    letter-spacing: -0.01em;
+
+}
+
+.registration-change-btn {
+    border: none;
+    background-color: inherit;
+    color: rgba(203, 17, 171, 1);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.delivery-method-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 16px;
+    margin-top: 12px;
+}
+
+.delivery-small-title {
+    letter-spacing: -0.3px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.delivery-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.delivery-extra-info {
+    display: flex;
+}
+
+.delivery-extra-icon {
+    margin-top: -7px;
+    margin-left: -6px;
+}
+
+.delivery-extra-info-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 4px;
+    margin-left: 5px;
+    letter-spacing: 0.15px;
+}
+
+.delivery-goods-group {
+    display: flex;
+    gap: 7px;
+}
+
+.delivery-goods {
+    height: 56px;
+}
+
+.delivery-goods img {
+    height: 56px;
+}
+
+.quantity-goods {
+    position: relative;
+    bottom: 70px;
+    left: 25px;
+    width: fit-content;
+    min-width: 10px;
+    padding: 1px 4px;
+}
+
+.delivery-info.delivery-method {
+    background-color: inherit;
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 22px;
+}
+
+.payment-method {
+    margin: 16px 0 2px 0;
+}
+
+.payment-card-date {
+    margin-left: 8px;
+}
+
+.payment-card-comment {
+    font-size: 13px;
+    color: rgba(151, 151, 175, 1);
+}
+
+.registration-form {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 700px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+}
+
+.registration-form-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.form-input {
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    border: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.form-input::placeholder {
+    color: rgba(151, 151, 175, 1);
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-error {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(245, 81, 35, 1);
+    opacity: 0;
+}
+
+.form-error.form-comment {
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+}
+
+.form-label {
+    color: rgba(151, 151, 175, 1);
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: -18px;
+    margin-bottom: 2px;
+}
