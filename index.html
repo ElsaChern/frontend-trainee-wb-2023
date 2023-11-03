@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="fonts/SegoeUI-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/SegoeUI-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/SegoeUI-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>Товары и точка</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/mainStyle/main.css">
     <link rel="stylesheet" href="./css/mainStyle/totalWindow.css">
@@ -16,23 +17,33 @@
     <link rel="stylesheet" href="./css/mainStyle/goodsOutStock.css">
     <link rel="stylesheet" href="./css/mainStyle/registration.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/mobile.css">
 </head>
 
 <body>
     <header>
-        <div class="menu-container">
+        <div class="mobile-header mobile-only ">
+            <div>
+                <img src="./img/mobille/menu.svg" alt="Каталог" width="28" height="28">
+            </div>
+            <span class="mobile-header-title">Товары и точка</span>
+            <div>
+                <img src="./img/Search.svg" alt="Каталог" width="28" height="28">
+            </div>
+        </div>
+        <div class="menu-container no-mobile">
             <div class="header-menu">
                 <img src="img/cataloge.svg" alt="Каталог" width="48" height="48">
             </div>
             <img src="img/logo_WB.svg" alt="Логотип" width="106" height="56">
         </div>
-        <div class="search-container">
+        <div class="search-container no-mobile">
             <form>
                 <input class="search-input" type="text" placeholder="Я ищу...">
                 <button class="search-btn" type="submit"></button>
             </form>
         </div>
-        <div class="icons-menu-group">
+        <div class="icons-menu-group no-mobile">
             <div class="icon-menu">
                 <div class="icon-menu-img">
                     <img src="./img/profile.svg">
@@ -51,7 +62,7 @@
     <main>
         <div class="main-container">
             <div class="main-info-part cart-information">
-                <h1 class="cart-title">Корзина</h1>
+                <h1 class="mobile-title">Корзина</h1>
                 <div class="cart">
                     <div class="cart-components">
                         <div class="select-all-wrapper">
@@ -75,18 +86,23 @@
                                             <div class="product-img">
                                                 <img src="./img/prod_1.png" alt="Фото товара">
                                             </div>
-                                            <!-- <span class="size_product desktop-none">56<span> -->
+                                            <span class="product-size mobile-only">56<span>
                                         </div>
                                     </div>
                                     <div class="product-description">
+                                        <div class="price-container-mobile">
+                                            <span class="current-price">522 <span
+                                                    class="current-price-unit">сом</span></span>
+                                            <span class="old-price"><del>1051 сом</del></span>
+                                        </div>
                                         <span> Футболка UZcotton мужская </span>
                                         <div class="product-options">
                                             <span>Цвет: белый</span>
-                                            <span>Размер: 56</span>
+                                            <span class="no-mobile">Размер: 56</span>
                                         </div>
                                         <div class="product-stock-options">
                                             <span>Коледино WB</span>
-                                            <div class="popup-wrapper">
+                                            <div class="no-mobile popup-wrapper">
                                                 <span>OOO Вайлдберриз</span>
                                                 <div class="popup-container">
                                                     <span id="popup-button-market-1" class="btn-info"><img
@@ -122,12 +138,13 @@
                                             <img src="./img/delete.svg" alt="Удалить товар">
                                         </div>
                                     </div>
-                                    <div class="price-container">
+                                    <div class="price-container no-mobile">
                                         <span class="current-price">522 <span
                                                 class="current-price-unit">сом</span></span>
                                         <span class="old-price"><del>1051 сом</del></span>
                                     </div>
                                 </div>
+                                <div class="line-division mobile-only"></div>
                             </div>
                             <!---------------- Goods IN stock. Product № 2 ------------->
                             <div class="product">
@@ -141,10 +158,14 @@
                                             <div class="product-img">
                                                 <img src="./img/prod_2.png" alt="Фото товара">
                                             </div>
-                                            <!-- <span class="size_product desktop-none">56<span> -->
                                         </div>
                                     </div>
                                     <div class="product-description">
+                                        <div class="price-container-mobile">
+                                            <span class="current-price-v2">2 100 047 <span
+                                                    class="current-price-unit">сом</span></span>
+                                            <span class="old-price"><del>2 300 047 сом</del></span>
+                                        </div>
                                         <span> Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер
                                             на Apple iPhone XR, MobiSafe </span>
                                         <div class="product-options">
@@ -152,7 +173,7 @@
                                         </div>
                                         <div class="product-stock-options">
                                             <span>Коледино WB</span>
-                                            <div class="popup-wrapper">
+                                            <div class="no-mobile popup-wrapper">
                                                 <span>OOO Мегапрофстиль</span>
                                                 <div class="popup-container">
                                                     <span id="popup-button-market-2" class="btn-info"><img
@@ -181,7 +202,7 @@
                                             <img src="./img/delete.svg" alt="Удалить товар">
                                         </div>
                                     </div>
-                                    <div class="price-container">
+                                    <div class="price-container no-mobile">
                                         <span class="current-price-v2">2 100 047 <span
                                                 class="current-price-unit">сом</span></span>
                                         <span class="old-price"><del>2 300 047 сом</del></span>
@@ -200,15 +221,19 @@
                                             <div class="product-img">
                                                 <img src="./img/prod_3.png" alt="Фото товара">
                                             </div>
-                                            <!-- <span class="size_product desktop-none">56<span> -->
                                         </div>
                                     </div>
                                     <div class="product-description">
+                                        <div class="price-container-mobile">
+                                            <span class="current-price">494 <span
+                                                    class="current-price-unit">сом</span></span>
+                                            <span class="old-price"><del>950 сом</del></span>
+                                        </div>
                                         <span> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
                                             шестигранные,<br>Faber-Castell </span>
                                         <div class="product-stock-options">
                                             <span>Коледино WB</span>
-                                            <div class="popup-wrapper">
+                                            <div class="popup-wrapper no-mobile">
                                                 <span>OOO Вайлдберриз</span>
                                                 <div class="popup-container">
                                                     <span id="popup-button-market-3" class="btn-info"><img
@@ -238,7 +263,7 @@
                                             <img src="./img/delete.svg" alt="Удалить товар">
                                         </div>
                                     </div>
-                                    <div class="price-container">
+                                    <div class="price-container no-mobile">
                                         <span class="current-price">494 <span
                                                 class="current-price-unit">сом</span></span>
                                         <span class="old-price"><del>950 сом</del></span>
@@ -334,7 +359,7 @@
                         <div class="registration-wrapper">
                             <div class="registration">
                                 <div class="registration-title-wrapper">
-                                    <h3 class="registration-title">Способ доставки</h3>
+                                    <h3 class="registration-title mobile-title">Способ доставки</h3>
                                     <button class="registration-change-btn">Изменить</button>
                                 </div>
                                 <div class="delivery-method-info">
@@ -379,7 +404,7 @@
                             </div>
                             <div class="registration">
                                 <div class="registration-title-wrapper">
-                                    <h3 class="registration-title">Способ оплаты</h3>
+                                    <h3 class="registration-title mobile-title">Способ оплаты</h3>
                                     <button class="registration-change-btn">Изменить</button>
                                 </div>
                                 <div>
@@ -393,7 +418,7 @@
                                 </div>
                             </div>
                             <div class="registration">
-                                <h3 class="registration-title">Получатель</h3>
+                                <h3 class="registration-title mobile-title">Получатель</h3>
 
                                 <div class="registration-form">
                                     <div class="registration-form-item">
@@ -422,9 +447,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
@@ -432,7 +454,7 @@
             <div class="main-info-part delivery-and-payment-wrapper">
                 <div class="delivery-and-payment">
                     <div class="total_amount">
-                        <h2 class="total">Итого</h2>
+                        <h2 class="total mobile-title">Итого</h2>
                         <h3 class="total-sum">2 101 063<span class="total-amount-unit"> сом</span></h3>
                     </div>
                     <div class="extra-payment-info">
@@ -448,14 +470,14 @@
                         <span>Бесплатно</span>
                     </div>
                     <div class="delivery">
-                        <div class="delivery-point">
+                        <div class="delivery-point no-mobile">
                             <h4 class="d-and-p-title">Доставка в пункт выдачи</h4>
                             <div class="marker">
                                 <img src="./img/marker.svg" alt="Маркер">
                             </div>
                         </div>
-                        <p class="delivery-adress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                        <span class="date-pink">5–8 фев</span>
+                        <p class="delivery-adress no-mobile">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                        <span class="date-pink no-mobile">5–8 фев</span>
                         <div class="delivery-info">
                             <div class="green-check-mark">
                                 <img src="./img/green_check_mark.svg">
@@ -464,13 +486,13 @@
                                 <span class="text-green">бесплатно</span>
                             </span>
                         </div>
-                        <div class="delivery-point">
+                        <div class="delivery-point no-mobile">
                             <h4 class="d-and-p-title">Оплата картой</h4>
                             <div class="marker">
                                 <img src="./img/marker.svg" alt="Маркер">
                             </div>
                         </div>
-                        <div class="payment-card">
+                        <div class="payment-card no-mobile">
                             <div class="payment-card-img">
                                 <img src="./img/mir_card.svg">
                             </div>
@@ -501,6 +523,13 @@
     <footer>
         <span class="footer-text">© 2022 ООО «Товары и точка»</span>
     </footer>
+    <div class="bottom-menu mobile-only">
+        <img src="./img/mobille/home.svg">
+        <img src="./img/mobille/catalog.svg">
+        <img src="./img/mobille/cart.svg">
+        <img src="./img/mobille/favorites.svg">
+        <img src="./img/mobille/profile.svg">
+    </div>
     <script type="module" src="./js/script.js"></script>
 </body>
 
