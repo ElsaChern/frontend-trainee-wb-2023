@@ -5,13 +5,17 @@
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
     padding: 16px 24px 24px 24px;
     justify-content: center;
-
     height: fit-content;
     font-size: 13px;
     line-height: 16px;
     position: relative;
 }
 
+@media screen and (max-width: 1150px) {
+    .delivery-and-payment-wrapper {
+        width: 254px;
+    }
+}
 
 .total_amount {
     display: flex;

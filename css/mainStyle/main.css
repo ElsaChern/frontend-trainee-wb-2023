@@ -1,3 +1,7 @@
+.mobile-only {
+    display: none;
+}
+
 main {
     border-radius: 24px;
     background-color: rgba(246, 246, 250, 1);
@@ -21,7 +25,13 @@ main {
 .cart-information {
     gap: 13px;
     flex-grow: 1;
-    /* width: 891px; */
+}
+
+@media screen and (max-width: 1010px) {
+    .cart-information {
+        flex-grow: unset;
+        width: 600px;
+    }
 }
 
 .cart-title {

@@ -1,0 +1,155 @@
+@media screen and (max-width: 600px) {
+    .no-mobile {
+        display: none;
+    }
+
+    /* Header */
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mobile-header-title {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 19px;
+        /* в Figma 26px, но 26 не влезает */
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    /* Main container */
+    .main-container {
+        display: block;
+    }
+
+    .mobile-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    /* Goods in stock */
+    .checkbox-container {
+        width: 22px;
+        height: 22px;
+    }
+
+    .checkbox+label::before {
+        background: white;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .product-size {
+        display: flex;
+        justify-content: center;
+        height: 22px;
+        width: 22px;
+        position: relative;
+        right: 95px;
+        top: 70px;
+        background-color: white;
+        border-radius: 6px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .product-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .actions-price-of-goods {
+        position: relative;
+        top: 64px;
+        right: 300px;
+        width: 100%;
+    }
+
+    .price-container-mobile {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-self: right;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .current-price {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .actions-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 12px;
+        gap: 16px;
+    }
+
+    .counter-wrapper {
+        height: 32px;
+        width: 80px;
+        border-radius: 4px;
+    }
+
+    .counter-value-container {
+        position: static;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .value {
+        width: 32px;
+        font-size: 14px;
+    }
+
+    .counter-btn {
+        position: static;
+    }
+
+    .plus {
+        padding-right: 10px;
+    }
+
+    .minus {
+        padding-left: 10px;
+    }
+
+    /* Goods out of stock */
+
+
+    /* Registration */
+    .registration-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .registration-form {
+        flex-direction: column;
+    }
+
+    .delivery-method-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Total Window */
+
+    .delivery-and-payment-wrapper {
+        background-color: inherit;
+        box-shadow: none;
+    }
+
+    /* Bottom Menu */
+    .bottom-menu {
+        background-color: rgba(255, 255, 255, 1);
+        padding: 14px 13px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
