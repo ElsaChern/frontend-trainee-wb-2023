@@ -8,6 +8,8 @@
     <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/SegoeUI-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/SegoeUI-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SegoeUI-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SegoeUI-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>Товары и точка</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -67,14 +69,15 @@
                 <div class="cart">
                     <div class="cart-components">
                         <div class="select-all-wrapper">
-                            <div class="select-all">
+                            <div class="select-all" id="select_all">
                                 <input class="checkbox" checked id="check_all" type="checkbox">
                                 <label for="check_all">Выбрать все</label>
                             </div>
-                            <div class="up-arrow"><img src="./img/up_mark.svg"></div>
+                            <span class="total-goods-price" id="total_goods_price"></span>
+                            <div class="up-arrow" id="hide_cards_1"><img src="./img/up_mark.svg"></div>
                         </div>
                         <div class="line-division"></div>
-                        <div class="goods-in-stock">
+                        <div class="goods-in-stock" id="hidden_goods_in_stock">
                             <!---------------- Goods IN stock. Product № 1 ------------->
                             <div class="product">
                                 <div class="product-information">
@@ -367,10 +370,10 @@
                         </div>
                         <div class="select-all-wrapper">
                             <span class="no-products-title">Отсутствуют · 3 товара</span>
-                            <div class="up-arrow"><img src="./img/up_mark.svg"></div>
+                            <div class="up-arrow" id="hide_cards_2"><img src="./img/up_mark.svg"></div>
                         </div>
                         <div class="line-division"></div>
-                        <div class="product-out-stock">
+                        <div class="product-out-stock" id="hidden_goods_out_stock">
                             <!-------------- Goods OUT of stock. Product № 1 ------------->
                             <div class="product">
                                 <div class="product-information">
@@ -685,6 +688,7 @@
     </div>
     <script type="module" src="./js/price.js"></script>
     <script type="module" src="./js/tooltips.js"></script>
+    <script type="module" src="./js/hideСards.js"></script>
 </body>
 
 </html>
