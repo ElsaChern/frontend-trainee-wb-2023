@@ -1,0 +1,80 @@
+.tooltip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltip-info {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    position: absolute;
+    padding: 15px;
+    width: 273px;
+    margin-top: 20px;
+    display: none;
+}
+
+.tooltip-info-1 {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    position: absolute;
+    left: 0px;
+    padding: 15px;
+    width: 273px;
+    margin-top: 22px;
+    display: none;
+}
+
+.tooltip-info-prod-1,
+.tooltip-info-prod-3 {
+    top: 16px;
+    padding: 11px 16px 13px 16px;
+    gap: 8px;
+    width: 255px;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 20px;
+    display: none;
+}
+
+.tooltip-info-prod-2 {
+    top: 16px;
+    padding: 11px 16px 13px 16px;
+    gap: 8px;
+    width: 255px;
+    flex-direction: column;
+    margin-top: 6px;
+    margin-left: -15px;
+    display: none;
+}
+
+.tooltip-info-title {
+    margin: 0;
+    font-size: 13px;
+}
+
+.tooltip-discount {
+    margin-top: 55px;
+    margin-right: -10px;
+    padding: 11px 16px 13px 16px;
+    display: none;
+    gap: 8px;
+    font-size: 13px;
+    width: fit-content;
+}
+
+.tooltip-discount-description {
+    display: flex;
+    flex-direction: column;
+    color: rgba(160, 160, 164, 1);
+}
+
+.tooltip-discount-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
