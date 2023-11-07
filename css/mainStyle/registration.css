@@ -24,6 +24,7 @@
 }
 
 .registration-change-btn {
+    cursor: pointer;
     border: none;
     background-color: inherit;
     color: rgba(203, 17, 171, 1);

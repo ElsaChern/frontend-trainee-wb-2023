@@ -29,12 +29,10 @@ checkboxAllGoods.addEventListener("change", () => {
     for (let i = 0; i < 3; i++) {
       checkboxes[i].checked = true;
     }
-    // updateBasket();
   } else {
     for (let i = 0; i < 3; i++) {
       checkboxes[i].checked = false;
     }
-    // updateBasket();
   }
 });
 
@@ -42,6 +40,5 @@ for (let i = 0; i < 3; i++) {
   checkboxes[i].addEventListener("change", () => {
     checkboxAllGoods.checked =
       checkboxes[0].checked && checkboxes[1].checked && checkboxes[2].checked;
-    // updateBasket();
   });
 }
