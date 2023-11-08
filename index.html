@@ -645,7 +645,7 @@
                         </div>
                         <div class="delivery-point no-mobile">
                             <h4 class="d-and-p-title">Оплата картой</h4>
-                            <div class="marker">
+                            <div class="marker" id="payment_open_btn">
                                 <img src="./img/marker.svg" alt="Маркер">
                             </div>
                         </div>
@@ -678,7 +678,7 @@
         </div>
         <!---------------- Modal Window (delivery) ------------->
         <div class="modal-window-wrapper" id="modal_delivery">
-            <div class="background" id="background"></div>
+            <div class="background" id="delivery_background"></div>
             <div class="modal-window modal-delivery">
                 <div class="modal-window-title">
                     <h3>Способ доставки</h3>
@@ -701,21 +701,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="address-wrapper">
+                    <div class="content-wrapper">
                         <h5>Мои адреса</h5>
                         <!---------------- (delivery: address # 1) ------------->
-                        <div class="radio-address-container">
+                        <div class="radio-btn-container">
                             <div class="left-part">
                                 <div class="radio-icon">
-                                    <input type="radio" name="address" class="radio-btn" id="address_1" />
+                                    <input type="radio" name="address" class="radio-btn" id="address_1" checked />
                                     <label for="address_1"></label>
                                 </div>
                                 <div class="address-info">
                                     <span>Бишкек, улица Табышалиева, 57</span>
-                                    <div class="pick-up-point courier-checked">
-                                        <img src="./img/star.svg">
-                                        <span class="pick-up-point-text">Пункт выдачи</span>
-                                    </div>
                                 </div>
                             </div>
                             <div class="modal-actions-icons">
@@ -734,7 +730,7 @@
                             </div>
                         </div>
                         <!---------------- (delivery: address # 2) ------------->
-                        <div class="radio-address-container">
+                        <div class="radio-btn-container">
                             <div class="left-part">
                                 <div class="radio-icon">
                                     <input type="radio" name="address" class="radio-btn" id="address_2" />
@@ -765,7 +761,7 @@
                             </div>
                         </div>
                         <!---------------- (delivery: address # 3) ------------->
-                        <div class="radio-address-container">
+                        <div class="radio-btn-container">
                             <div class="left-part">
                                 <div class="radio-icon">
                                     <input type="radio" name="address" class="radio-btn" id="address_3" />
@@ -801,12 +797,88 @@
                     <button class="enter-btn" id="choose-window-delivery">Выбрать</button>
                 </div>
             </div>
-            <div class="overlay"></div>
+            <!-- <div class="overlay"></div> -->
         </div>
-
-
-
-
+        <!---------------- Modal Window (payment) ------------->
+        <div class="modal-window-wrapper" id="modal_payment">
+            <div class="background" id="payment_background"></div>
+            <div class="modal-window modal-payment">
+                <div class="modal-window-title">
+                    <h3>Способ оплаты</h3>
+                    <div class="modal-window-close-btn" id="close_payment_window">
+                        <img src="./img/close.svg" width="24" height="24">
+                    </div>
+                </div>
+                <div class="modal-window-content">
+                    <div class="content-wrapper">
+                        <!---------------- (payment: card # 1) ------------->
+                        <div class="radio-btn-container">
+                            <div class="left-part">
+                                <div class="radio-icon">
+                                    <input type="radio" name="payment" class="radio-btn" id="payment_1" checked />
+                                    <label for="payment_1"></label>
+                                </div>
+                                <div class="payment-card-img">
+                                    <img src="./img/mir_card.svg">
+                                </div>
+                                <div class="payment-info">
+                                    <span>1234 56•• •••• 1234</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------------- (payment: card # 2) ------------->
+                        <div class="radio-btn-container">
+                            <div class="left-part">
+                                <div class="radio-icon">
+                                    <input type="radio" name="payment" class="radio-btn" id="payment_2" />
+                                    <label for="payment_2"></label>
+                                </div>
+                                <div class="payment-card-img">
+                                    <img src="./img/visa_card.svg">
+                                </div>
+                                <div class="payment-info">
+                                    <span>1234 56•• •••• 1234</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------------- (payment: card # 3) ------------->
+                        <div class="radio-btn-container">
+                            <div class="left-part">
+                                <div class="radio-icon">
+                                    <input type="radio" name="payment" class="radio-btn" id="payment_3" />
+                                    <label for="payment_3"></label>
+                                </div>
+                                <div class="payment-card-img">
+                                    <img src="./img/master_card_1.svg">
+                                </div>
+                                <div class="payment-info">
+                                    <span>1234 56•• •••• 1234</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------------- (payment: card # 4) ------------->
+                        <div class="radio-btn-container">
+                            <div class="left-part">
+                                <div class="radio-icon">
+                                    <input type="radio" name="payment" class="radio-btn" id="payment_4" />
+                                    <label for="payment_4"></label>
+                                </div>
+                                <div class="payment-card-img">
+                                    <img src="./img/master_card_2.svg">
+                                </div>
+                                <div class="payment-info">
+                                    <span>1234 56•• •••• 1234</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enter-btn-container">
+                    <button class="enter-btn" id="choose_window_payment">Выбрать</button>
+                </div>
+            </div>
+            <!-- <div class="overlay"></div> -->
+        </div>
     </main>
     <footer>
         <span class="footer-text">© 2022 ООО «Товары и точка»</span>
@@ -823,7 +895,7 @@
     <script type="module" src="./js/tooltips.js"></script>
     <script type="module" src="./js/hideCards.js"></script>
     <script type="module" src="./js/modalDelivery.js"></script>
-    <script type="module" src="./js/modalPaymentCard.js"></script>
+    <script type="module" src="./js/modalPayment.js"></script>
 </body>
 
 </html>

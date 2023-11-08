@@ -4,7 +4,7 @@ const btnToCloseDeliveryWindow = document.querySelector(
   "#close_delivery_window",
 );
 const deliveryWindow = document.querySelector("#modal_delivery");
-const outOfWidowBtn = document.querySelector("#background");
+const outOfWidowBtn = document.querySelector("#delivery_background");
 
 btnToOpenDeliveryWindow.addEventListener("click", () => {
   deliveryWindow.classList.add("showen");

@@ -43,6 +43,10 @@
     width: 500px;
 }
 
+.modal-payment {
+    width: 400px;
+}
+
 
 .modal-window-title {
     padding: 16px 24px 13px 24px;
@@ -110,20 +114,19 @@
     line-height: 16px;
 }
 
-/* Checked */
 .form-radio-btn input[type=radio]:checked+label {
     border-color: rgba(203, 17, 171, 1);
 }
 
 
-.address-wrapper {
+.content-wrapper {
     display: flex;
     flex-direction: column;
     padding-bottom: 33px;
     gap: 8px;
 }
 
-.address-wrapper h5 {
+.content-wrapper h5 {
     font-size: 13px;
     font-weight: 700;
     line-height: 16px;
@@ -132,7 +135,7 @@
     height: 18px;
 }
 
-.radio-address-container {
+.radio-btn-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,13 +148,13 @@
     gap: 8px
 }
 
-.address-wrapper .radio-address-container {
+.content-wrapper .radio-btn-container {
     align-items: flex-start;
     gap: 8px;
 }
 
 
-.address-wrapper.address-info {
+.content-wrapper.address-info {
     font-size: 16px;
     line-height: 24px;
     flex-grow: 1;
@@ -159,6 +162,10 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+
+.content-wrapper.payment-info {
+    margin-left: -8px;
 }
 
 .pick-up-point {
@@ -217,7 +224,6 @@
     background-position: center center;
 }
 
-/* Checked */
 .radio-btn:checked+label::before {
     border-color: rgba(203, 17, 171, 1);
     background-color: rgba(203, 17, 171, 1);
