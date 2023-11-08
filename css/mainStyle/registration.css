@@ -24,6 +24,7 @@
 }
 
 .registration-change-btn {
+    cursor: pointer;
     border: none;
     background-color: inherit;
     color: rgba(203, 17, 171, 1);
@@ -127,7 +128,6 @@
     width: 100%;
 }
 
-
 .form-input {
     margin-bottom: 3px;
     font-size: 16px;
@@ -138,11 +138,14 @@
     font-weight: 400;
     margin-bottom: 4px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
 }
 
 .form-input::placeholder {
     color: rgba(151, 151, 175, 1);
+}
+
+.form-input.phone-input::placeholder {
+    color: rgba(0, 0, 0, 1);
 }
 
 .form-input:focus {
@@ -167,4 +170,15 @@
     line-height: 16px;
     margin-top: -18px;
     margin-bottom: 2px;
+    opacity: 0;
+}
+
+
+.form-label.phone-label {
+    color: rgba(151, 151, 175, 1);
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: -18px;
+    margin-bottom: 2px;
+    opacity: 1;
 }

@@ -95,6 +95,16 @@ main {
     background-image: url('../../img/check_mark.svg');
 }
 
+.total-goods-price {
+    display: none;
+}
+
+.total-goods-price.show {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    display: block;
+}
+
 .up-arrow {
     display: flex;
     justify-content: center;

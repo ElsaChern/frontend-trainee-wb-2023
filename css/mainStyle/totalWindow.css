@@ -94,6 +94,7 @@
 .text-green {
     color: rgba(12, 180, 119, 1);
     border-bottom: 1px dashed rgba(12, 180, 119, 0.2);
+    cursor: pointer;
 }
 
 .payment-card {

@@ -17,6 +17,10 @@
     gap: 16px;
 }
 
+.actions-icons-out svg {
+    cursor: pointer;
+}
+
 .product-description.disabled-text {
     width: 309px;
 }
