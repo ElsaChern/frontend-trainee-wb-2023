@@ -78,6 +78,7 @@
                             <div class="up-arrow" id="hide_cards_1"><img src="./img/up_mark.svg"></div>
                         </div>
                         <div class="line-division"></div>
+                        <!---------------- Goods IN stock. ------------->
                         <div class="goods-in-stock" id="hidden_goods_in_stock">
                             <!---------------- Goods IN stock. Product № 1 ------------->
                             <div class="product">
@@ -374,6 +375,7 @@
                             <div class="up-arrow" id="hide_cards_2"><img src="./img/up_mark.svg"></div>
                         </div>
                         <div class="line-division"></div>
+                        <!-------------- Goods OUT of stock. ------------->
                         <div class="product-out-stock" id="hidden_goods_out_stock">
                             <!-------------- Goods OUT of stock. Product № 1 ------------->
                             <div class="product">
@@ -500,6 +502,7 @@
                             </div>
                         </div>
                         <div class="registration-wrapper">
+                            <!-------------- Registration. Block # 1 ------------->
                             <div class="registration">
                                 <div class="registration-title-wrapper">
                                     <h3 class="registration-title mobile-title">Способ доставки</h3>
@@ -552,6 +555,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-------------- Registration. Block # 2 ------------->
                             <div class="registration">
                                 <div class="registration-title-wrapper">
                                     <h3 class="registration-title mobile-title">Способ оплаты</h3>
@@ -567,32 +571,39 @@
                                     <span class="payment-card-comment">Спишем оплату с карты при получении</span>
                                 </div>
                             </div>
+                            <!-------------- Registration. Block # 3 ------------->
                             <div class="registration">
                                 <h3 class="registration-title mobile-title">Получатель</h3>
-
                                 <div class="registration-form">
                                     <div class="registration-form-item">
-                                        <input class="form-input" type="text" placeholder="Имя">
-                                        <span class="form-error">Используйте латинские буквы</span>
+                                        <span class="form-label" id="name_label">Имя</span>
+                                        <input class="form-input" type="text" placeholder="Имя" id="name_input">
+                                        <span class="form-error" id="name_error">Укажите имя</span>
                                     </div>
                                     <div class="registration-form-item">
-                                        <input class="form-input" type="text" placeholder="Фамилия">
-                                        <span class="form-error">Укажите фамилию</span>
+                                        <span class="form-label" id="secondName_label">Фамилия</span>
+                                        <input class="form-input" type="text" placeholder="Фамилия"
+                                            id="secondName_input">
+                                        <span class="form-error" id="secondName_error">Укажите фамилию</span>
                                     </div>
                                 </div>
                                 <div class="registration-form">
                                     <div class="registration-form-item">
-                                        <input class="form-input" type="text" placeholder="Почта">
-                                        <span class="form-error">Используйте латинские буквы</span>
+                                        <span class="form-label" id="email_label">Почта</span>
+                                        <input class="form-input" type="text" placeholder="Почта" id="email_input">
+                                        <span class="form-error" id="email_error">Используйте латинские буквы</span>
                                     </div>
                                     <div class="registration-form-item">
-                                        <span class="form-label">Телефон</span>
-                                        <input class="form-input" type="text" value="+7 988 123-45-67">
-                                        <span class="form-error">Введите номер телефона</span>
+                                        <span class="form-label phone-label" id="phone_label">Телефон</span>
+                                        <input class="form-input phone-input" type="text" placeholder="+7 988 123-45-67"
+                                            id="phone_input">
+                                        <span class="form-error" id="phone_error">Введите номер телефона</span>
                                     </div>
                                     <div class="registration-form-item">
-                                        <input class="form-input" type="text" placeholder="ИНН">
-                                        <span class="form-error form-comment">Для таможенного оформления</span>
+                                        <span class="form-label" id="inn_label">ИНН</span>
+                                        <input class="form-input" type="text" placeholder="ИНН" id="inn_input">
+                                        <span class="form-error form-comment" id="inn_error">Для таможенного
+                                            оформления</span>
                                     </div>
                                 </div>
                             </div>
@@ -896,6 +907,7 @@
     <script type="module" src="./js/hideCards.js"></script>
     <script type="module" src="./js/modalDelivery.js"></script>
     <script type="module" src="./js/modalPayment.js"></script>
+    <script type="module" src="./js/form.js"></script>
 </body>
 
 </html>
