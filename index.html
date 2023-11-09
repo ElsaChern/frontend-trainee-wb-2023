@@ -567,9 +567,10 @@
                                 <div>
                                     <div class="payment-card payment-method">
                                         <div class="payment-card-img">
-                                            <img src="./img/mir_card.svg">
+                                            <img id="registration_pay_img" src="./img/mir_card.svg">
                                         </div>
-                                        <span>1234 56•• •••• 1234 <span class="payment-card-date">01/30</span></span>
+                                        <span id="registration_card_number">1234 56•• •••• 1234</span> <span
+                                            class="payment-card-date">01/30</span>
                                     </div>
                                     <span class="payment-card-comment">Спишем оплату с карты при получении</span>
                                 </div>
@@ -666,9 +667,9 @@
                         </div>
                         <div class="payment-card no-mobile">
                             <div class="payment-card-img">
-                                <img src="./img/mir_card.svg">
+                                <img id="total_window_pay_img" src="./img/mir_card.svg">
                             </div>
-                            <span>1234 12•• •••• 1234</span>
+                            <span id="total_window_card_number">1234 12•• •••• 1234</span>
                         </div>
                         <div class="payment-info-wrapper">
                             <div class="payment-info">
@@ -816,7 +817,6 @@
                     <button class="enter-btn" id="choose_window_delivery">Выбрать</button>
                 </div>
             </div>
-            <!-- <div class="overlay"></div> -->
         </div>
         <!---------------- Modal Window (payment) ------------->
         <div class="modal-window-wrapper" id="modal_payment">
@@ -841,7 +841,7 @@
                                     <img src="./img/mir_card.svg">
                                 </div>
                                 <div class="payment-info">
-                                    <span>1234 56•• •••• 1234</span>
+                                    <span id="card_number_1">1234 56•• •••• 1234</span>
                                 </div>
                             </div>
                         </div>
@@ -856,7 +856,7 @@
                                     <img src="./img/visa_card.svg">
                                 </div>
                                 <div class="payment-info">
-                                    <span>1234 56•• •••• 1234</span>
+                                    <span id="card_number_2">1234 56•• •••• 1234</span>
                                 </div>
                             </div>
                         </div>
@@ -871,7 +871,7 @@
                                     <img src="./img/master_card_1.svg">
                                 </div>
                                 <div class="payment-info">
-                                    <span>1234 56•• •••• 1234</span>
+                                    <span id="card_number_3">1234 56•• •••• 1234</span>
                                 </div>
                             </div>
                         </div>
@@ -886,7 +886,7 @@
                                     <img src="./img/master_card_2.svg">
                                 </div>
                                 <div class="payment-info">
-                                    <span>1234 56•• •••• 1234</span>
+                                    <span id="card_number_4">1234 56•• •••• 1234</span>
                                 </div>
                             </div>
                         </div>
@@ -896,7 +896,6 @@
                     <button class="enter-btn" id="choose_window_payment">Выбрать</button>
                 </div>
             </div>
-            <!-- <div class="overlay"></div> -->
         </div>
     </main>
     <footer>
