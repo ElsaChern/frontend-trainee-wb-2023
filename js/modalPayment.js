@@ -1,3 +1,5 @@
+// Реализация открытия/ закрытия модального окна
+
 const btnToOpenPaymentWindow = document.querySelector("#payment_change_btn");
 const iconToOpenPaymentWindow = document.querySelector("#payment_open_btn");
 const btnToClosePaymentWindow = document.querySelector("#close_payment_window");
@@ -19,3 +21,5 @@ btnToClosePaymentWindow.addEventListener("click", () => {
 outOfWidowBtn.addEventListener("click", () => {
   paymentWindow.classList.remove("showen");
 });
+
+// Реализация функционала внутри модального окна
