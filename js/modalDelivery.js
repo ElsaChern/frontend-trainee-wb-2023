@@ -76,30 +76,23 @@ let totalWindowDeliveryTitle = document.querySelector(
 const deliveryExtraInfo = document.querySelector(".delivery-extra-info");
 
 submitBtn.addEventListener("click", () => {
+  let deliveryExtraInfoStyle;
   if (courierMethodBtn.checked) {
     registrationDeliveryTitle.textContent = "Доставка";
     totalWindowDeliveryTitle.textContent = "Доставка курьером";
-    for (let i = 1; i < 4; i++) {
-      const addressRadioBtn = document.querySelector(`#address_${i}`);
-      const addressText = document.querySelector(`#address_text_${i}`);
-      if (addressRadioBtn.checked) {
-        totalWindowDeliveryText.textContent = addressText.textContent;
-        registrationDeliveryText.textContent = addressText.textContent;
-        deliveryExtraInfo.style.display = "none";
-      }
-    }
-  }
-  if (pickUpMethodBtn.checked) {
+    deliveryExtraInfoStyle = "none";
+  } else {
     registrationDeliveryTitle.textContent = "Пункт выдачи";
     totalWindowDeliveryTitle.textContent = "Доставка в пункт выдачи";
-    for (let i = 1; i < 4; i++) {
-      const addressRadioBtn = document.querySelector(`#address_${i}`);
-      const addressText = document.querySelector(`#address_text_${i}`);
-      if (addressRadioBtn.checked) {
-        totalWindowDeliveryText.textContent = addressText.textContent;
-        registrationDeliveryText.textContent = addressText.textContent;
-        deliveryExtraInfo.style.display = "flex";
-      }
+    deliveryExtraInfoStyle = "flex";
+  }
+  for (let i = 1; i < 4; i++) {
+    const addressRadioBtn = document.querySelector(`#address_${i}`);
+    const addressText = document.querySelector(`#address_text_${i}`);
+    if (addressRadioBtn.checked) {
+      totalWindowDeliveryText.textContent = addressText.textContent;
+      registrationDeliveryText.textContent = addressText.textContent;
+      deliveryExtraInfo.style.display = deliveryExtraInfoStyle;
     }
   }
   deliveryWindow.classList.remove("showen");
