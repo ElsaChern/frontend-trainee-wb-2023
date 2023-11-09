@@ -509,8 +509,11 @@
                                     <button class="registration-change-btn" id="delivery_change_btn">Изменить</button>
                                 </div>
                                 <div class="delivery-method-info">
-                                    <span class="delivery-small-title">Пункт выдачи</span>
-                                    <div class="delivery-text">Бишкек, улица Ахматбека Суюмбаева, 12/1
+                                    <span class="delivery-small-title" id="registration_delivery_title">Пункт
+                                        выдачи</span>
+                                    <div class="delivery-text"><span id="registration_delivery_text">Бишкек, улица
+                                            Ахматбека
+                                            Суюмбаева, 12/1</span>
                                         <div class="delivery-extra-info">
                                             <img src="./img/star.svg">
                                             <span class="delivery-extra-info-text">4.99</span>
@@ -632,12 +635,13 @@
                     </div>
                     <div class="delivery">
                         <div class="delivery-point no-mobile">
-                            <h4 class="d-and-p-title">Доставка в пункт выдачи</h4>
+                            <h4 class="d-and-p-title" id="total_window_delivery_title">Доставка в пункт выдачи</h4>
                             <div class="marker" id="delivery_open_btn">
                                 <img src="./img/marker.svg" alt="Маркер">
                             </div>
                         </div>
-                        <p class="delivery-address no-mobile">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                        <p class="delivery-address no-mobile" id="total_window_delivery_text">Бишкек, улица Ахматбека
+                            Суюмбаева, 12/1</p>
                         <span class="date-pink no-mobile">5–8 фев</span>
                         <div class="delivery-info">
                             <div class="green-check-mark">
@@ -701,14 +705,14 @@
                     <div class="delivery-method-wrapper">
                         <div class="radio-btn-wrapper">
                             <div class="form-radio-btn">
-                                <input type="radio" name="method" value="method-1" id="method-1" />
-                                <label for="method-1" id="text-method-1">В пункт выдачи</label>
+                                <input type="radio" name="method" value="pick_up_method" id="pick_up_method" />
+                                <label for="pick_up_method" id="text-method-1">В пункт выдачи</label>
                             </div>
                         </div>
                         <div class="radio-btn-wrapper">
                             <div class="form-radio-btn">
-                                <input type="radio" name="method" value="method-2" id="method-2" checked />
-                                <label for="method-2" id="text-method-2">Курьером</label>
+                                <input type="radio" name="method" value="courier_method" id="courier_method" checked />
+                                <label for="courier_method" id="text-method-2">Курьером</label>
                             </div>
                         </div>
                     </div>
@@ -722,7 +726,11 @@
                                     <label for="address_1"></label>
                                 </div>
                                 <div class="address-info">
-                                    <span>Бишкек, улица Табышалиева, 57</span>
+                                    <span id="address_text_1">Бишкек, улица Табышалиева, 57</span>
+                                    <div class="pick-up-point courier-checked">
+                                        <img src="./img/star.svg">
+                                        <span class="pick-up-point-text">Пункт выдачи</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-actions-icons">
@@ -748,7 +756,7 @@
                                     <label for="address_2"></label>
                                 </div>
                                 <div class="address-info">
-                                    <span>Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                                    <span id="address_text_2">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
                                     <div class="pick-up-point courier-checked">
                                         <img src="./img/star.svg">
                                         <span class="delivery-extra-info-text">4.99</span>
@@ -779,7 +787,7 @@
                                     <label for="address_3"></label>
                                 </div>
                                 <div class="address-info">
-                                    <span>Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
+                                    <span id="address_text_3">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
                                     <div class="pick-up-point courier-checked">
                                         <img src="./img/star.svg">
                                         <span class="delivery-extra-info-text">4.99</span>
@@ -805,7 +813,7 @@
                     </div>
                 </div>
                 <div class="enter-btn-container">
-                    <button class="enter-btn" id="choose-window-delivery">Выбрать</button>
+                    <button class="enter-btn" id="choose_window_delivery">Выбрать</button>
                 </div>
             </div>
             <!-- <div class="overlay"></div> -->
