@@ -62,3 +62,14 @@ submitBtn.addEventListener("click", () => {
   }
   paymentWindow.classList.remove("showen");
 });
+
+// refactoring?
+
+const cards = [
+  { id: 0, numder: "1234...", expireDate: "hehe", img: "url" },
+  { id: 1, numder: "1234...", expireDate: "hehe", img: "url" },
+  { id: 2, numder: "1234...", expireDate: "hehe", img: "url" },
+  { id: 3, numder: "1234...", expireDate: "hehe", img: "url" },
+];
+
+let selectedCard = cards[0];
