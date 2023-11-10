@@ -35,9 +35,9 @@
 .delivery-method-info {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-column-gap: 32px;
+    grid-column-gap: 37px;
     grid-row-gap: 16px;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 .delivery-small-title {

@@ -23,15 +23,8 @@ main {
 }
 
 .cart-information {
-    gap: 13px;
+    gap: 7px;
     flex-grow: 1;
-}
-
-@media screen and (max-width: 1010px) {
-    .cart-information {
-        flex-grow: unset;
-        width: 600px;
-    }
 }
 
 .cart-title {
@@ -63,7 +56,6 @@ main {
 .checkbox {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
 
 }
 
@@ -73,6 +65,9 @@ main {
 
 }
 
+.checkbox+label:hover {
+    cursor: pointer;
+}
 
 .checkbox+label::before {
     box-sizing: border-box;
@@ -93,25 +88,14 @@ main {
     background-image: url('../../img/check_mark.svg');
 }
 
-.total-goods-price {
-    display: none;
-}
-
-.total-goods-price.show {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 600;
-    display: block;
-}
-
 .up-arrow {
     display: flex;
     justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 
 .line-division {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: -18px;
+    margin-bottom: -5px;
     padding-top: 2px;
 }

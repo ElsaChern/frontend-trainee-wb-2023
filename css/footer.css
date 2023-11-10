@@ -2,6 +2,14 @@ footer {
     justify-content: center;
 }
 
+.bottom-menu img {
+    margin-top: -20px;
+}
+
+.bottom-menu-cart {
+    margin-top: 10px;
+}
+
 .footer-text {
     font-size: 13px;
     font-weight: 400;
@@ -9,4 +17,9 @@ footer {
     color: rgba(255, 255, 255, 0.7);
     padding: 8px;
     letter-spacing: 0.25px;
+}
+
+.quantity.quantity-basket.footer {
+    top: -38px;
+    left: 18px;
 }

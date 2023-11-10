@@ -1,5 +1,5 @@
 .menu-container {
-    width: 170px;
+    /* width: 170px; */
     display: flex;
     gap: 16px;
     align-items: center;
@@ -8,14 +8,15 @@
 header,
 footer {
     display: flex;
-    justify-content: space-around;
-    padding: 16px 23px 16px 24px;
+    justify-content: space-between;
+    padding: 16px 19px 16px 24px;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(103, 37, 168, 1);
 }
 
 .search-container {
-    position: relative;
+    /* position: relative; */
+    width: 100%;
     margin: auto 0;
     margin-left: 32px;
 }
@@ -24,32 +25,6 @@ form {
     position: relative;
     margin-right: 32px;
 }
-
-@media screen and (min-width: 1401px) {
-    form {
-        width: 1145px;
-    }
-}
-
-
-@media screen and (max-width: 1600px) {
-    form {
-        width: 947px;
-    }
-}
-
-@media screen and (max-width: 1350px) {
-    form {
-        width: 700px;
-    }
-}
-
-@media screen and (max-width: 1120px) {
-    form {
-        width: 574px;
-    }
-}
-
 
 ::placeholder {
     color: rgba(255, 255, 255, 1);
@@ -84,12 +59,12 @@ form {
 }
 
 .icons-menu-group {
-    gap: 35px;
+    gap: 40px;
     padding-left: 24px;
     font-size: 13px;
     line-height: 16px;
     display: flex;
-    align-items: baseline;
+    /* align-items: baseline; */
 }
 
 .icon-menu {
@@ -97,12 +72,12 @@ form {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
-    padding-bottom: 3px;
+    gap: 8px;
+
 }
 
 .icon-menu-img {
-    height: 28px;
+    /* height: 28px; */
     width: 56px;
     display: flex;
     justify-content: center;
@@ -124,6 +99,6 @@ form {
 }
 
 .quantity-basket {
-    top: -10px;
-    right: 4px;
+    top: -11px;
+    right: 3px;
 }
