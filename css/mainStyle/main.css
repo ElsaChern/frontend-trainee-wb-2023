@@ -63,6 +63,7 @@ main {
 .checkbox {
     position: absolute;
     opacity: 0;
+    cursor: pointer;
 
 }
 
@@ -72,9 +73,6 @@ main {
 
 }
 
-.checkbox+label:hover {
-    cursor: pointer;
-}
 
 .checkbox+label::before {
     box-sizing: border-box;
