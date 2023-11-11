@@ -11,7 +11,7 @@ payCheckbox.addEventListener("change", () => {
 
 const changeOrderButtonText = () => {
   if (payCheckbox.checked) {
-    toOrderButton.textContent = `Оплатить ${TotalSum.textContent}`;
+    toOrderButton.textContent = `Оплатить ${TotalSum.textContent} сом`;
   } else {
     toOrderButton.textContent = "Заказать";
   }

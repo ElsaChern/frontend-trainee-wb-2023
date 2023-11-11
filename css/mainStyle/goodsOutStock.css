@@ -28,3 +28,12 @@
 .actions-container.disabled-actions {
     padding-top: 4px;
 }
+
+.product-size.disabled {
+    color: rgba(0, 0, 0, 1);
+}
+
+.product-size.disabled.pencils {
+    width: fit-content;
+    padding: 2px;
+}

@@ -263,6 +263,10 @@
         gap: 15px;
     }
 
+    .tooltip-info {
+        left: 11px
+    }
+
     /* Total Window */
 
     .delivery-and-payment-wrapper {
@@ -296,5 +300,16 @@
         display: flex;
         justify-content: space-between;
     }
+
+    /* Modal Window */
+
+    .modal-delivery {
+        height: 100%;
+    }
+
+    .modal-payment {
+        height: 100%;
+    }
+
 
 }
