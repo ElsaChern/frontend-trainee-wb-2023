@@ -1,5 +1,5 @@
 const productsInCartContainer = document.querySelector(".goods-in-stock");
-const products = productsInCartContainer.querySelectorAll(".product");
+export const products = productsInCartContainer.querySelectorAll(".product");
 
 // Функция, которая отображает общую цену товара
 
@@ -7,6 +7,8 @@ let totalCurrentSum = document.querySelector("#total_sum");
 let totalOldtSum = document.querySelector("#total_old_sum");
 let totalDiscount = document.querySelector("#total_discount");
 let totalProductAmount = document.querySelector("#total_amount");
+
+// Функция, которая отображает количество товаров в корзине при загрузке страницы.
 
 const showCartNumber = () => {
   let counter = document.querySelector(".quantity-basket");
@@ -105,14 +107,17 @@ products.forEach((product) => {
 
   checkbox.addEventListener("change", () => {
     calculateTotal();
+    changeDeliveryItems(product);
   });
 
   counterMinus.addEventListener("click", () => {
     calculatePrice(+counterInput.value - 1);
+    changeDeliveryItems(product);
   });
 
   counterPlus.addEventListener("click", () => {
     calculatePrice(+counterInput.value + 1);
+    changeDeliveryItems(product);
   });
 
   counterInput.addEventListener("change", (e) => {
@@ -124,7 +129,79 @@ products.forEach((product) => {
     } else {
       calculatePrice(newValue);
     }
+
+    changeDeliveryItems(product);
   });
 });
 
-// Функция, которая отображает количество товаров в корзине при загрузке страницы.
+// Функция, которая отображает/скрывает товары в блоке "Способ доставки"
+
+export const changeDeliveryItems = (product) => {
+  const goodsGroup1 = document.querySelector("#goods_group_1");
+  const goodsGroup2 = document.querySelector("#goods_group_2");
+  const productId = product.id.slice(-1);
+  const itemsCount = +product.querySelector('input[name="counter"]').value;
+
+  const checkedProducts = [...products].filter((item) => {
+    return item.querySelector(".checkbox").checked;
+  });
+
+  let currentGoodId = `#delivery_good_${productId}`;
+
+  if (product.querySelector(".checkbox").checked) {
+    let currentGood1 = goodsGroup1.querySelector(currentGoodId);
+    let quantityItem1 = currentGood1.querySelector(".quantity");
+
+    currentGood1.style.display = "";
+    quantityItem1.style.display = "";
+
+    // 5-6 февраля
+    if (itemsCount == 1) {
+      quantityItem1.style.display = "none";
+    } else if (productId == 2 && itemsCount > 184) {
+      quantityItem1.textContent = 184;
+    } else if (itemsCount > 1) {
+      quantityItem1.textContent = itemsCount;
+    }
+
+    // 7-8 февраля
+    if (productId == 2) {
+      let currentGood2 = goodsGroup2.querySelector(currentGoodId);
+      console.log(currentGood2);
+      let quantityItem2 = currentGood2.querySelector(".quantity");
+
+      goodsGroup2.style.display = "";
+
+      if (itemsCount > 184) {
+        currentGood2.style.display = "";
+        if (itemsCount == 185) {
+          quantityItem2.style.display = "none";
+        } else {
+          quantityItem2.style.display = "";
+          quantityItem2.textContent = itemsCount - 184;
+        }
+      } else {
+        currentGood2.style.display = "none";
+        goodsGroup2.style.display = "none";
+      }
+    }
+  } else {
+    // 5-6 февраля
+    let currentGood1 = goodsGroup1.querySelector(currentGoodId);
+    currentGood1.style.display = "none";
+
+    // 7-8 февраля
+    if (productId == 2) {
+      let currentGood2 = goodsGroup2.querySelector(currentGoodId);
+      currentGood2.style.display = "none";
+
+      goodsGroup2.style.display = "none";
+    }
+  }
+
+  if (checkedProducts.length === 0) {
+    goodsGroup1.style.display = "none";
+  } else {
+    goodsGroup1.style.display = "";
+  }
+};

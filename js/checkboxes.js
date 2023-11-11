@@ -1,4 +1,4 @@
-import { calculateTotal } from "./products.js";
+import { products, calculateTotal, changeDeliveryItems } from "./products.js";
 
 // Изменения кнопки "Заказать" в Total Window
 const toOrderButton = document.querySelector("#to_order_button");
@@ -33,6 +33,9 @@ checkboxAllGoods.addEventListener("change", () => {
     }
   }
   calculateTotal();
+  products.forEach((product) => {
+    changeDeliveryItems(product);
+  });
 });
 
 for (let i = 0; i < 3; i++) {

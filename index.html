@@ -81,7 +81,7 @@
                         <!---------------- Goods IN stock. ------------->
                         <div class="goods-in-stock" id="hidden_goods_in_stock">
                             <!---------------- Goods IN stock. Product № 1 ------------->
-                            <div class="product" data-price="1051">
+                            <div class="product" data-price="1051" id="product_1">
                                 <div class="product-information">
                                     <div>
                                         <div class="product-img-container">
@@ -194,7 +194,7 @@
                                 <div class="line-division mobile-only"></div>
                             </div>
                             <!---------------- Goods IN stock. Product № 2 ------------->
-                            <div class="product" data-price="11500">
+                            <div class="product" data-price="11500" id="product_2">
                                 <div class="product-information">
                                     <div>
                                         <div class="product-img-container">
@@ -306,7 +306,7 @@
                                 <div class="line-division mobile-only"></div>
                             </div>
                             <!---------------- Goods IN stock. Product № 3 ------------->
-                            <div class="product" data-price="475">
+                            <div class="product" data-price="475" id="product_3">
                                 <div class="product-information">
                                     <div>
                                         <div class="product-img-container">
@@ -567,24 +567,29 @@
                                     </div>
                                     <span class="delivery-small-title">Стоимость доставки</span>
                                     <span class="delivery-text">Бесплатно</span>
-                                    <span class="delivery-small-title">5—6 февраля</span>
-                                    <div class="delivery-goods-group">
-                                        <div class="delivery-goods">
-                                            <img src="./img/prod_1.png">
-                                        </div>
-                                        <div class="delivery-goods">
-                                            <img src="./img/prod_2.png">
-                                            <div class="quantity quantity-goods">184</div>
-                                        </div>
-                                        <div class="delivery-goods">
-                                            <img src="./img/prod_3.png">
-                                            <div class="quantity quantity-goods">2</div>
+                                    <div class="goods-group-wrapper" id="goods_group_1">
+                                        <span class="delivery-small-title">5—6 февраля</span>
+                                        <div class="delivery-goods-group">
+                                            <div class="delivery-goods" id="delivery_good_1">
+                                                <img src="./img/prod_1.png">
+                                                <div class="quantity quantity-goods" style="display: none"></div>
+                                            </div>
+                                            <div class="delivery-goods" id="delivery_good_2">
+                                                <img src="./img/prod_2.png">
+                                                <div class="quantity quantity-goods">184</div>
+                                            </div>
+                                            <div class="delivery-goods" id="delivery_good_3">
+                                                <img src="./img/prod_3.png">
+                                                <div class="quantity quantity-goods">2</div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="delivery-small-title">7—8 февраля</span>
-                                    <div class="delivery-goods">
-                                        <img src="./img/prod_2.png">
-                                        <div class="quantity quantity-goods">16</div>
+                                    <div class="goods-group-wrapper" id="goods_group_2">
+                                        <span class="delivery-small-title">7—8 февраля</span>
+                                        <div class="delivery-goods" id="delivery_good_2">
+                                            <img src="./img/prod_2.png">
+                                            <div class="quantity quantity-goods">16</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="delivery-info delivery-method">

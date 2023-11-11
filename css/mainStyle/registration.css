@@ -46,6 +46,10 @@
     line-height: 25px;
 }
 
+.goods-group-wrapper {
+    display: contents;
+}
+
 .delivery-text {
     font-size: 16px;
     font-weight: 400;
