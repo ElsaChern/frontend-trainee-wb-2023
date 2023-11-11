@@ -81,7 +81,7 @@
                         <!---------------- Goods IN stock. ------------->
                         <div class="goods-in-stock" id="hidden_goods_in_stock">
                             <!---------------- Goods IN stock. Product № 1 ------------->
-                            <div class="product">
+                            <div class="product" data-price="1051">
                                 <div class="product-information">
                                     <div>
                                         <div class="product-img-container">
@@ -103,7 +103,7 @@
                                             </span>
                                             <span class="old-price">
                                                 <del>
-                                                    <span id="old_price">1051</span>
+                                                    <span id="old_price">1 051</span>
                                                     сом
                                                 </del>
                                             </span>
@@ -135,12 +135,12 @@
                                 <div class="actions-price-of-goods">
                                     <div class="actions-container">
                                         <div class="counter-wrapper">
-                                            <button class="counter-btn minus" id="minus-1" disabled>
+                                            <button class="counter-btn minus" id="minus-1">
                                                 <div class="counter-item">−</div>
                                             </button>
                                             <div class="counter-value-container">
                                                 <input class="value" id="counter-value-1" type="text" name="counter"
-                                                    value="1" disabled>
+                                                    value="1" maxlength="3">
                                             </div>
                                             <button class="counter-btn plus" id="plus-1">
                                                 <div class="counter-item">+</div>
@@ -175,7 +175,7 @@
                                         </span>
                                         <span class="old-price" id="tooltip_button_discount_1">
                                             <del>
-                                                <span id="old_price">1051</span>
+                                                <span id="old_price">1 051</span>
                                                 сом
                                             </del>
                                         </span>
@@ -194,7 +194,7 @@
                                 <div class="line-division mobile-only"></div>
                             </div>
                             <!---------------- Goods IN stock. Product № 2 ------------->
-                            <div class="product">
+                            <div class="product" data-price="11500">
                                 <div class="product-information">
                                     <div>
                                         <div class="product-img-container">
@@ -249,12 +249,12 @@
                                 <div class="actions-price-of-goods">
                                     <div class="actions-container">
                                         <div class="counter-wrapper">
-                                            <button class="counter-btn minus" id="minus-2" disabled>
+                                            <button class="counter-btn minus" id="minus-2">
                                                 <div class="counter-item">−</div>
                                             </button>
                                             <div class="counter-value-container">
                                                 <input class="value" id="counter-value-2" type="text" name="counter"
-                                                    value="200" disabled>
+                                                    value="200" maxlength="3">
                                             </div>
                                             <button class="counter-btn plus" id="plus-2">
                                                 <div class="counter-item">+</div>
@@ -306,7 +306,7 @@
                                 <div class="line-division mobile-only"></div>
                             </div>
                             <!---------------- Goods IN stock. Product № 3 ------------->
-                            <div class="product">
+                            <div class="product" data-price="475">
                                 <div class="product-information">
                                     <div>
                                         <div class="product-img-container">
@@ -356,12 +356,12 @@
                                 <div class="actions-price-of-goods">
                                     <div class="actions-container">
                                         <div class="counter-wrapper">
-                                            <button class="counter-btn minus" id="minus-3" disabled>
+                                            <button class="counter-btn minus" id="minus-3">
                                                 <div class="counter-item">−</div>
                                             </button>
                                             <div class="counter-value-container">
                                                 <input class="value" id="counter-value-3" type="text" name="counter"
-                                                    value="2" disabled>
+                                                    value="2" maxlength="3">
                                             </div>
                                             <button class="counter-btn plus" id="plus-3">
                                                 <div class="counter-item">+</div>
@@ -668,7 +668,7 @@
                         <h3 class="total-sum"><span id="total_sum">2 101 063</span> сом</h3>
                     </div>
                     <div class="extra-payment-info">
-                        <span>203 товара</span>
+                        <span id="total_amount">203 товара</span>
                         <span><span id="total_old_sum">2 302 048</span> сом</span>
                     </div>
                     <div class="extra-payment-info">
