@@ -1,12 +1,12 @@
 .no-products-title {
     font-weight: 600;
-    letter-spacing: -0.25px;
+    letter-spacing: 0.15px;
 }
 
 .product-out-stock {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 16px;
     color: rgba(151, 151, 175, 1);
 }
