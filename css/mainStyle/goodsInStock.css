@@ -12,7 +12,6 @@
 
 .product-information {
     display: flex;
-    /* padding-top: 12px; */
     gap: 17px;
 }
 
@@ -38,12 +37,6 @@
     flex-direction: column;
     gap: 7px;
 }
-
-/* @media screen and (max-width: 1010px) {
-    .product-description {
-        width: 185px;
-    }
-} */
 
 .product-options {
     display: flex;
@@ -82,7 +75,6 @@
 
 .actions-price-of-goods {
     width: 226px;
-    /* padding-top: 9px; */
     display: flex;
     justify-content: space-between;
 }

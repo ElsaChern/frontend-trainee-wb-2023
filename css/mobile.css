@@ -33,16 +33,13 @@
 
     .mobile-header {
         display: flex;
-        /* align-items: center; */
         width: 100%;
         justify-content: space-between;
-        /* gap: 20px; */
 
     }
 
     .mobile-header-title {
         line-height: 20px;
-        /* font-family: 'Segoe UI', sans-serif; */
         font-size: 23px;
         font-weight: 600;
         text-transform: uppercase;
@@ -72,12 +69,13 @@
 
     .goods-in-stock {
         padding: 0 25px 0 14px;
-        gap: 16px;
+        gap: 12px;
+        margin-bottom: 24px;
     }
 
     .product-out-stock {
-        padding: 0 25px 0 14px;
-        gap: 17px;
+        padding: 2px 20px 0px 14px;
+        gap: 23px;
     }
 
     .product-img-container {
@@ -144,6 +142,11 @@
         padding: 0;
         width: 100%;
         justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 12px;
+        gap: 16px;
     }
 
     .product-out-stock>.product>.actions-price-of-goods {
@@ -172,14 +175,6 @@
     .current-price {
         font-size: 16px;
         line-height: 24px;
-    }
-
-    .actions-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-top: 12px;
-        gap: 16px;
     }
 
     .actions-icons {
@@ -226,6 +221,10 @@
         overflow: hidden;
     }
 
+    .actions-icons-out {
+        gap: 24px;
+    }
+
     /* Registration */
     .registration-wrapper {
         display: flex;
@@ -261,7 +260,7 @@
     .delivery-method-info {
         display: flex;
         flex-direction: column;
-        margin-top: 3px;
+        gap: 15px;
     }
 
     /* Total Window */
