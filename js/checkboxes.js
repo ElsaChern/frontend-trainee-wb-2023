@@ -1,3 +1,5 @@
+import { products, calculateTotal, changeDeliveryItems } from "./products.js";
+
 // Изменения кнопки "Заказать" в Total Window
 const toOrderButton = document.querySelector("#to_order_button");
 const payCheckbox = document.querySelector("#pay_checkbox");
@@ -16,13 +18,9 @@ const changeOrderButtonText = () => {
 };
 
 // Изменение чекбоксов у товаров в корзине
+const productsInCartContainer = document.querySelector(".goods-in-stock");
 const checkboxAllGoods = document.querySelector("#checked_all");
-
-const checkboxes = [
-  document.querySelector("#checkbox_prod_1"),
-  document.querySelector("#checkbox_prod_2"),
-  document.querySelector("#checkbox_prod_3"),
-];
+const checkboxes = productsInCartContainer.querySelectorAll(".checkbox");
 
 checkboxAllGoods.addEventListener("change", () => {
   if (checkboxAllGoods.checked) {
@@ -34,6 +32,10 @@ checkboxAllGoods.addEventListener("change", () => {
       checkboxes[i].checked = false;
     }
   }
+  calculateTotal();
+  products.forEach((product) => {
+    changeDeliveryItems(product);
+  });
 });
 
 for (let i = 0; i < 3; i++) {
