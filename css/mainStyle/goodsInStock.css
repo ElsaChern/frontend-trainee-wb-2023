@@ -203,3 +203,7 @@
     text-decoration-style: dashed;
     cursor: pointer;
 }
+
+.prod-name {
+    cursor: pointer;
+}

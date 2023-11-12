@@ -32,11 +32,11 @@
             </div>
             <span class="mobile-header-title">Товары и точка</span>
             <div>
-                <img src="./img/Search.svg" alt="Каталог" width="28" height="28">
+                <img src="./img/Search.svg" alt="Поиск" width="28" height="28">
             </div>
         </div>
         <div class="menu-container no-mobile">
-            <div class="header-menu">
+            <div>
                 <img src="img/cataloge.svg" alt="Каталог" width="48" height="48">
             </div>
             <img src="img/logo_WB.svg" alt="Логотип" width="106" height="56">
@@ -50,13 +50,13 @@
         <div class="icons-menu-group no-mobile">
             <div class="icon-menu">
                 <div class="icon-menu-img">
-                    <img src="./img/profile.svg">
+                    <img src="./img/profile.svg" alt="Профиль">
                 </div>
                 <span>Профиль</span>
             </div>
             <div class="icon-menu">
                 <div class="icon-menu-img">
-                    <img src="./img/cart.svg">
+                    <img src="./img/cart.svg" alt="Корзина">
                     <div class="quantity quantity-basket">3</div>
                 </div>
                 <span>Корзина</span>
@@ -75,7 +75,7 @@
                                 <label for="checked_all">Выбрать все</label>
                             </div>
                             <span class="total-goods-price" id="total_goods_price"></span>
-                            <div class="up-arrow" id="hide_cards_1"><img src="./img/up_mark.svg"></div>
+                            <div class="up-arrow" id="hide_cards_1"><img src="./img/up_mark.svg" alt="Свернуть"></div>
                         </div>
                         <div class="line-division"></div>
                         <!---------------- Goods IN stock. ------------->
@@ -108,7 +108,7 @@
                                                 </del>
                                             </span>
                                         </div>
-                                        <span> Футболка UZcotton мужская </span>
+                                        <span class="prod-name"> Футболка UZcotton мужская </span>
                                         <div class="product-options">
                                             <span>Цвет: белый</span>
                                             <span class="no-mobile">Размер: 56</span>
@@ -119,7 +119,7 @@
                                                 <span>OOO Вайлдберриз</span>
                                                 <div class="tooltip-product-container">
                                                     <span id="tooltip_button_prod_1" class="btn-info"><img
-                                                            src="./img/info_btn.svg"></span>
+                                                            src="./img/info_btn.svg" alt="Информация о товаре"></span>
                                                     <div class="tooltip-info tooltip-info-prod-1"
                                                         id="tooltip_info_prod_1">
                                                         <h5 class="tooltip-info-title">OOO «ВАЙЛДБЕРРИЗ»</h5>
@@ -135,18 +135,18 @@
                                 <div class="actions-price-of-goods">
                                     <div class="actions-container">
                                         <div class="counter-wrapper">
-                                            <button class="counter-btn minus" id="minus-1">
+                                            <button class="counter-btn minus">
                                                 <div class="counter-item">−</div>
                                             </button>
                                             <div class="counter-value-container">
                                                 <input class="value" id="counter-value-1" type="text" name="counter"
                                                     value="1" maxlength="3">
                                             </div>
-                                            <button class="counter-btn plus" id="plus-1">
+                                            <button class="counter-btn plus">
                                                 <div class="counter-item">+</div>
                                             </button>
                                         </div>
-                                        <span class="remainder" id="remainder">Осталось 2 шт.</span>
+                                        <span class="remainder">Осталось 2 шт.</span>
                                         <div class="actions-icons">
                                             <svg class="like" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -185,8 +185,8 @@
                                                 <span>Скидка покупателя 10%</span>
                                             </span>
                                             <span class="tooltip-discount-amount">
-                                                <span>−300 сом</span>
-                                                <span>−30 сом</span>
+                                                <span class="discount-55">−300 сом</span>
+                                                <span class="discount-10">−30 сом</span>
                                             </span>
                                         </div>
                                     </div>
@@ -222,7 +222,8 @@
                                                 </del>
                                             </span>
                                         </div>
-                                        <span> Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер
+                                        <span class="prod-name"> Силиконовый чехол картхолдер (отверстия) для карт,
+                                            прозрачный кейс бампер
                                             на Apple iPhone XR, MobiSafe </span>
                                         <div class="product-options">
                                             <span>Цвет: прозрачный</span>
@@ -233,7 +234,7 @@
                                                 <span>OOO Мегапрофстиль</span>
                                                 <div class="tooltip-product-container">
                                                     <span id="tooltip_button_prod_2" class="btn-info"><img
-                                                            src="./img/info_btn.svg"></span>
+                                                            src="./img/info_btn.svg" alt="Информация о товаре"></span>
                                                     <div class="tooltip-info tooltip-info-prod-2"
                                                         id="tooltip_info_prod_2">
                                                         <h5 class="tooltip-info-title">OOO «МЕГАПРОФСТИЛЬ»</h5>
@@ -249,14 +250,14 @@
                                 <div class="actions-price-of-goods">
                                     <div class="actions-container">
                                         <div class="counter-wrapper">
-                                            <button class="counter-btn minus" id="minus-2">
+                                            <button class="counter-btn minus">
                                                 <div class="counter-item">−</div>
                                             </button>
                                             <div class="counter-value-container">
                                                 <input class="value" id="counter-value-2" type="text" name="counter"
                                                     value="200" maxlength="3">
                                             </div>
-                                            <button class="counter-btn plus" id="plus-2">
+                                            <button class="counter-btn plus">
                                                 <div class="counter-item">+</div>
                                             </button>
                                         </div>
@@ -297,8 +298,8 @@
                                                 <span>Скидка покупателя 10%</span>
                                             </span>
                                             <span class="tooltip-discount-amount">
-                                                <span>−300 сом</span>
-                                                <span>−30 сом</span>
+                                                <span class="discount-55">−300 сом</span>
+                                                <span class="discount-10">−30 сом</span>
                                             </span>
                                         </div>
                                     </div>
@@ -332,7 +333,8 @@
                                                 </del>
                                             </span>
                                         </div>
-                                        <span> Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
+                                        <span class="prod-name"> Карандаши цветные Faber-Castell "Замок", набор 24
+                                            цвета, заточенные,
                                             шестигранные,<br>Faber-Castell </span>
                                         <div class="product-stock-options">
                                             <span>Коледино WB</span>
@@ -340,7 +342,7 @@
                                                 <span>OOO Вайлдберриз</span>
                                                 <div class="tooltip-product-container">
                                                     <span id="tooltip_button_prod_3" class="btn-info"><img
-                                                            src="./img/info_btn.svg"></span>
+                                                            src="./img/info_btn.svg" alt="Информация о товаре"></span>
                                                     <div class="tooltip-info tooltip-info-prod-3"
                                                         id="tooltip_info_prod_3">
                                                         <h5 class="tooltip-info-title">OOO «ВАЙЛДБЕРРИЗ»</h5>
@@ -356,18 +358,18 @@
                                 <div class="actions-price-of-goods">
                                     <div class="actions-container">
                                         <div class="counter-wrapper">
-                                            <button class="counter-btn minus" id="minus-3">
+                                            <button class="counter-btn minus">
                                                 <div class="counter-item">−</div>
                                             </button>
                                             <div class="counter-value-container">
                                                 <input class="value" id="counter-value-3" type="text" name="counter"
                                                     value="2" maxlength="3">
                                             </div>
-                                            <button class="counter-btn plus" id="plus-3">
+                                            <button class="counter-btn plus">
                                                 <div class="counter-item">+</div>
                                             </button>
                                         </div>
-                                        <span class="remainder" id="remainder">Осталось 2 шт.</span>
+                                        <span class="remainder">Осталось 2 шт.</span>
                                         <div class="actions-icons">
                                             <svg class="like" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -405,8 +407,8 @@
                                                 <span>Скидка покупателя 10%</span>
                                             </span>
                                             <span class="tooltip-discount-amount">
-                                                <span>−300 сом</span>
-                                                <span>−30 сом</span>
+                                                <span class="discount-55">−300 сом</span>
+                                                <span class="discount-10">−30 сом</span>
                                             </span>
                                         </div>
                                     </div>
@@ -415,7 +417,7 @@
                         </div>
                         <div class="select-all-wrapper">
                             <span class="no-products-title">Отсутствуют · 3 товара</span>
-                            <div class="up-arrow" id="hide_cards_2"><img src="./img/up_mark.svg"></div>
+                            <div class="up-arrow" id="hide_cards_2"><img src="./img/up_mark.svg" alt="Свернуть"></div>
                         </div>
                         <div class="line-division"></div>
                         <!-------------- Goods OUT of stock. ------------->
@@ -427,6 +429,7 @@
                                         <div class="product-img-container">
                                             <div class="product-img">
                                                 <img src="./img/prod_1_disabled.png" alt="Фото отсутствующего товара">
+                                                <span class="product-size disabled mobile-only">56<span>
                                             </div>
                                         </div>
                                     </div>
@@ -513,6 +516,8 @@
                                         <div class="product-img-container">
                                             <div class="product-img">
                                                 <img src="./img/prod_3_disabled.png" alt="Фото отсутствующего товара">
+                                                <span
+                                                    class="product-size disabled pencils mobile-only">56/54/52...<span>
                                             </div>
                                         </div>
                                     </div>
@@ -560,7 +565,7 @@
                                             Ахматбека
                                             Суюмбаева, 12/1</span>
                                         <div class="delivery-extra-info">
-                                            <img src="./img/star.svg">
+                                            <img src="./img/star.svg" alt="Рейтинг">
                                             <span class="delivery-extra-info-text">4.99</span>
                                             <span class="delivery-extra-info-text">Ежедневно с 10 до 21</span>
                                         </div>
@@ -571,15 +576,15 @@
                                         <span class="delivery-small-title">5—6 февраля</span>
                                         <div class="delivery-goods-group">
                                             <div class="delivery-goods" id="delivery_good_1">
-                                                <img src="./img/prod_1.png">
+                                                <img src="./img/prod_1.png" alt="Фото товара">
                                                 <div class="quantity quantity-goods" style="display: none"></div>
                                             </div>
                                             <div class="delivery-goods" id="delivery_good_2">
-                                                <img src="./img/prod_2.png">
+                                                <img src="./img/prod_2.png" alt="Фото товара">
                                                 <div class="quantity quantity-goods">184</div>
                                             </div>
                                             <div class="delivery-goods" id="delivery_good_3">
-                                                <img src="./img/prod_3.png">
+                                                <img src="./img/prod_3.png" alt="Фото товара">
                                                 <div class="quantity quantity-goods">2</div>
                                             </div>
                                         </div>
@@ -587,20 +592,20 @@
                                     <div class="goods-group-wrapper" id="goods_group_2">
                                         <span class="delivery-small-title">7—8 февраля</span>
                                         <div class="delivery-goods" id="delivery_good_2">
-                                            <img src="./img/prod_2.png">
+                                            <img src="./img/prod_2.png" alt="Фото товара">
                                             <div class="quantity quantity-goods">16</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="delivery-info delivery-method">
                                     <div class="green-check-mark">
-                                        <img src="./img/green_check_mark.svg">
+                                        <img src="./img/green_check_mark.svg" alt="Согласие с информацией">
                                     </div>
                                     <span>Обратная доставка товаров на склад при отказе —
-                                        <span class="text-green" id="text_green_bnt">бесплатно</span>
+                                        <span class="text-green" id="text_green_bnt_1">бесплатно</span>
                                     </span>
                                     <div class="tooltip-container">
-                                        <div class="tooltip-info" id="tooltip_info">
+                                        <div class="tooltip-info" id="tooltip_info_1">
                                             <span>Если товары вам не подойдут,
                                                 мы вернем их обратно на склад — это бесплатно
                                             </span>
@@ -617,7 +622,7 @@
                                 <div>
                                     <div class="payment-card payment-method">
                                         <div class="payment-card-img">
-                                            <img id="registration_pay_img" src="./img/mir_card.svg">
+                                            <img id="registration_pay_img" src="./img/mir_card.svg" alt="Карта мир">
                                         </div>
                                         <span id="registration_card_number">1234 56•• •••• 1234</span> <span
                                             class="payment-card-date">01/30</span>
@@ -674,7 +679,7 @@
                     </div>
                     <div class="extra-payment-info">
                         <span id="total_amount">203 товара</span>
-                        <span><span id="total_old_sum">2 302 048</span> сом</span>
+                        <span><span id="total_old_sum">2 302 048</span> сом</span>
                     </div>
                     <div class="extra-payment-info">
                         <span>Скидка</span>
@@ -696,13 +701,13 @@
                         <span class="date-pink no-mobile">5–8 фев</span>
                         <div class="delivery-info">
                             <div class="green-check-mark">
-                                <img src="./img/green_check_mark.svg">
+                                <img src="./img/green_check_mark.svg" alt="Согласие с информацией">
                             </div>
                             <span>Обратная доставка товаров на склад при отказе —
-                                <span class="text-green" id="text_green_bnt_1">бесплатно</span>
+                                <span class="text-green" id="text_green_bnt_2">бесплатно</span>
                             </span>
                             <div class="tooltip-container">
-                                <div class="tooltip-info-1" id="tooltip_info_1">
+                                <div class="tooltip-info-1" id="tooltip_info_2">
                                     <span>Если товары вам не подойдут,
                                         мы вернем их обратно на склад — это бесплатно
                                     </span>
@@ -717,7 +722,7 @@
                         </div>
                         <div class="payment-card no-mobile">
                             <div class="payment-card-img">
-                                <img id="total_window_pay_img" src="./img/mir_card.svg">
+                                <img id="total_window_pay_img" src="./img/mir_card.svg" alt="Карта мир">
                             </div>
                             <span id="total_window_card_number">1234 12•• •••• 1234</span>
                         </div>
@@ -732,7 +737,7 @@
                         <div class="to-order">
                             <button type="button" id="to_order_button" class="to-order-btn">Заказать</button>
                             <div class="to-order-comment">
-                                <img src="./img/black_tick.svg">
+                                <img src="./img/black_tick.svg" alt="Согласие с информацией">
                                 <span>Соглашаюсь <span class="gray-bottom">с правилами пользования торговой
                                         площадкой</span> и <span class="gray-bottom">возврата</span>
                                 </span>
@@ -749,19 +754,19 @@
                 <div class="modal-window-title">
                     <h3>Способ доставки</h3>
                     <div class="modal-window-close-btn" id="close_delivery_window">
-                        <img src="./img/close.svg" width="24" height="24">
+                        <img src="./img/close.svg" width="24" height="24" alt="Закрыть окно">
                     </div>
                 </div>
                 <div class="modal-window-content">
                     <div class="delivery-method-wrapper">
                         <div class="radio-btn-wrapper">
-                            <div class="form-radio-btn">
+                            <div class="method-radio-btn">
                                 <input type="radio" name="method" value="pick_up_method" id="pick_up_method" />
                                 <label for="pick_up_method" id="text-method-1">В пункт выдачи</label>
                             </div>
                         </div>
                         <div class="radio-btn-wrapper">
-                            <div class="form-radio-btn">
+                            <div class="method-radio-btn">
                                 <input type="radio" name="method" value="courier_method" id="courier_method" checked />
                                 <label for="courier_method" id="text-method-2">Курьером</label>
                             </div>
@@ -779,7 +784,7 @@
                                 <div class="address-info">
                                     <span id="address_text_1">Бишкек, улица Табышалиева, 57</span>
                                     <div class="pick-up-point courier-checked">
-                                        <img src="./img/star.svg">
+                                        <img src="./img/star.svg" alt="Рейтинг">
                                         <span class="pick-up-point-text">Пункт выдачи</span>
                                     </div>
                                 </div>
@@ -809,7 +814,7 @@
                                 <div class="address-info">
                                     <span id="address_text_2">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
                                     <div class="pick-up-point courier-checked">
-                                        <img src="./img/star.svg">
+                                        <img src="./img/star.svg" alt="Рейтинг">
                                         <span class="delivery-extra-info-text">4.99</span>
                                         <span class="pick-up-point-text">Пункт выдачи</span>
                                     </div>
@@ -840,7 +845,7 @@
                                 <div class="address-info">
                                     <span id="address_text_3">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
                                     <div class="pick-up-point courier-checked">
-                                        <img src="./img/star.svg">
+                                        <img src="./img/star.svg" alt="Рейтинг">
                                         <span class="delivery-extra-info-text">4.99</span>
                                         <span class="pick-up-point-text">Пункт выдачи</span>
                                     </div>
@@ -875,7 +880,7 @@
                 <div class="modal-window-title">
                     <h3>Способ оплаты</h3>
                     <div class="modal-window-close-btn" id="close_payment_window">
-                        <img src="./img/close.svg" width="24" height="24">
+                        <img src="./img/close.svg" width="24" height="24" alt="Закрыть окно">
                     </div>
                 </div>
                 <div class="modal-window-content">
@@ -888,7 +893,7 @@
                                     <label for="payment_1"></label>
                                 </div>
                                 <div class="payment-card-img">
-                                    <img src="./img/mir_card.svg">
+                                    <img src="./img/mir_card.svg" alt="Карта мир">
                                 </div>
                                 <div class="payment-info">
                                     <span id="card_number_1">1234 56•• •••• 1234</span>
@@ -903,7 +908,7 @@
                                     <label for="payment_2"></label>
                                 </div>
                                 <div class="payment-card-img">
-                                    <img src="./img/visa_card.svg">
+                                    <img src="./img/visa_card.svg" alt="Карта виза">
                                 </div>
                                 <div class="payment-info">
                                     <span id="card_number_2">1234 56•• •••• 1234</span>
@@ -918,7 +923,7 @@
                                     <label for="payment_3"></label>
                                 </div>
                                 <div class="payment-card-img">
-                                    <img src="./img/master_card_1.svg">
+                                    <img src="./img/master_card_1.svg" alt="Карта мастер">
                                 </div>
                                 <div class="payment-info">
                                     <span id="card_number_3">1234 56•• •••• 1234</span>
@@ -933,7 +938,7 @@
                                     <label for="payment_4"></label>
                                 </div>
                                 <div class="payment-card-img">
-                                    <img src="./img/master_card_2.svg">
+                                    <img src="./img/master_card_2.svg" alt="Карта мастер">
                                 </div>
                                 <div class="payment-info">
                                     <span id="card_number_4">1234 56•• •••• 1234</span>
@@ -952,14 +957,14 @@
         <span class="footer-text">© 2022 ООО «Товары и точка»</span>
     </footer>
     <div class="bottom-menu mobile-only">
-        <img src="./img/mobille/home.svg">
-        <img src="./img/mobille/catalog.svg">
+        <img src="./img/mobille/home.svg" alt="Домой">
+        <img src="./img/mobille/catalog.svg" alt="Каталог">
         <div class="bottom-menu-cart">
-            <img src="./img/mobille/cart.svg">
+            <img src="./img/mobille/cart.svg" alt="Корзина">
             <div class="quantity quantity-basket footer">3</div>
         </div>
-        <img src="./img/mobille/favorites.svg">
-        <img src="./img/mobille/profile.svg">
+        <img src="./img/mobille/favorites.svg" alt="Избранное">
+        <img src="./img/mobille/profile.svg" alt="Профиль">
     </div>
     <script type="module" src="./js/products.js"></script>
     <script type="module" src="./js/checkboxes.js"></script>

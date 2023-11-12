@@ -84,16 +84,16 @@
     width: 50%;
 }
 
-.form-radio-btn {
+.method-radio-btn {
     display: inline-block;
     width: 100%;
 }
 
-.form-radio-btn input[type=radio] {
+.method-radio-btn input[type=radio] {
     display: none;
 }
 
-.form-radio-btn label {
+.method-radio-btn label {
     box-sizing: border-box;
 
     cursor: pointer;
@@ -114,7 +114,7 @@
     line-height: 16px;
 }
 
-.form-radio-btn input[type=radio]:checked+label {
+.method-radio-btn input[type=radio]:checked+label {
     border-color: rgba(203, 17, 171, 1);
 }
 
