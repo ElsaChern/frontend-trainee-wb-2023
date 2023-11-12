@@ -1,3 +1,5 @@
+import { changeOrderButtonText } from "./checkboxes.js";
+
 const productsInCartContainer = document.querySelector(".goods-in-stock");
 export const products = productsInCartContainer.querySelectorAll(".product");
 
@@ -55,6 +57,8 @@ export const calculateTotal = () => {
   totalDiscount.textContent = parseInt(
     String(totalDiscountValue),
   ).toLocaleString("ru");
+
+  changeOrderButtonText();
 };
 
 // Функция, которая отображает цену товара для каждого из продуктов
@@ -100,6 +104,24 @@ products.forEach((product) => {
         "ru",
       );
     });
+
+    // изменение суммы скидки в сплывающем окне
+    const discount55 = product.querySelector(".discount-55");
+    const discount10 = product.querySelector(".discount-10");
+
+    console.log(product);
+    console.log(discount55);
+
+    const discount55Value = -productOldPriceValue * 0.55;
+    discount55.textContent = `${parseInt(
+      String(discount55Value),
+    ).toLocaleString("ru")} сом`;
+
+    const discount10Value = -productOldPriceValue * 0.1;
+    discount10.textContent = `${parseInt(
+      String(discount10Value),
+    ).toLocaleString("ru")} сом`;
+
     calculateTotal();
   };
 
