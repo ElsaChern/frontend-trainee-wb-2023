@@ -109,9 +109,6 @@ products.forEach((product) => {
     const discount55 = product.querySelector(".discount-55");
     const discount10 = product.querySelector(".discount-10");
 
-    console.log(product);
-    console.log(discount55);
-
     const discount55Value = -productOldPriceValue * 0.55;
     discount55.textContent = `${parseInt(
       String(discount55Value),
@@ -189,7 +186,6 @@ export const changeDeliveryItems = (product) => {
     // 7-8 февраля
     if (productId == 2) {
       let currentGood2 = goodsGroup2.querySelector(currentGoodId);
-      console.log(currentGood2);
       let quantityItem2 = currentGood2.querySelector(".quantity");
 
       goodsGroup2.style.display = "";

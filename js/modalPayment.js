@@ -40,20 +40,20 @@ const payRadioBtn4 = document.querySelector("#payment_4");
 
 submitBtn.addEventListener("click", () => {
   if (payRadioBtn1.checked) {
-    totalWindowCardImg.src = "/img/mir_card.svg";
-    registrationCardImg.src = "/img/mir_card.svg";
+    totalWindowCardImg.src = "./img/mir_card.svg";
+    registrationCardImg.src = "./img/mir_card.svg";
   }
   if (payRadioBtn2.checked) {
-    totalWindowCardImg.src = "/img/visa_card.svg";
-    registrationCardImg.src = "/img/visa_card.svg";
+    totalWindowCardImg.src = "./img/visa_card.svg";
+    registrationCardImg.src = "./img/visa_card.svg";
   }
   if (payRadioBtn3.checked) {
-    totalWindowCardImg.src = "/img/master_card_1.svg";
-    registrationCardImg.src = "/img/master_card_1.svg";
+    totalWindowCardImg.src = "./img/master_card_1.svg";
+    registrationCardImg.src = "./img/master_card_1.svg";
   }
   if (payRadioBtn4.checked) {
-    totalWindowCardImg.src = "/img/master_card_2.svg";
-    registrationCardImg.src = "/img/master_card_2.svg";
+    totalWindowCardImg.src = "./img/master_card_2.svg";
+    registrationCardImg.src = "./img/master_card_2.svg";
   }
   for (let i = 1; i < 5; i++) {
     const cardNumber = document.querySelector(`#card_number_${i}`);
